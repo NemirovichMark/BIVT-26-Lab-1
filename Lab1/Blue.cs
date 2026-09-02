@@ -10,7 +10,7 @@ namespace Lab1
 
             if ((a > 0 && b > 0) || (a == 0 && b == 0) || (a < 0 && b < 0))
             {
-                answer = true;
+                answer = false;
             }
 
             return answer;
