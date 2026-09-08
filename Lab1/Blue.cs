@@ -7,7 +7,11 @@
             bool answer = false;
 
             // code here
-
+            if (a > 0 && b > 0 || a < 0 & b < 0)
+            {  answer = true; }
+               
+        
+                
             // end
 
             return answer;
@@ -17,7 +21,10 @@
             bool answer = false;
 
             // code here
-
+            if (d % 1 > 0 || d % 1 < 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +34,7 @@
             bool answer = false;
 
             // code here
-
+            
             // end
 
             return answer;
