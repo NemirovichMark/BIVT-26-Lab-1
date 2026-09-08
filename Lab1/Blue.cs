@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Blue
     {
@@ -7,17 +7,24 @@
             bool answer = false;
 
             // code here
-            //hello
-            // end
+            if (a > 0 && b > 0)
+            { answer = true; }
+            else if (a < 0 && b < 0)
+            { answer = true; }
+            else
+            { answer = false; }
+                // end
 
-            return answer;
+                return answer;
         }
         public bool Task2(double d)
         {
             bool answer = false;
 
             // code here
-
+            double c = d*100000;
+            if (c % 10000 > 0)
+            { answer = true; }
             // end
 
             return answer;
@@ -27,7 +34,8 @@
             bool answer = false;
 
             // code here
-
+            if (a%b==0)
+            { answer=true; }
             // end
 
             return answer;
