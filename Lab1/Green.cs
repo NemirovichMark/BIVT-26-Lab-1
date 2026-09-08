@@ -1,4 +1,5 @@
-﻿namespace Lab1
+//я что то поменял
+namespace Lab1
 {
     public class Green
     {
