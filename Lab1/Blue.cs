@@ -1,10 +1,10 @@
-﻿namespace Lab1
+namespace Lab1
 {
-    public class Blue
+    public class Purple
     {
-        public bool Task1(int a, int b)
+        public bool Task1(int a, int b, int c)
         {
-            bool answer = false;
+            bool answer = (a > 0 && b > 0 && c > 0) || (a < 0 && b < 0 && c < 0);
 
             // code here
 
@@ -12,9 +12,9 @@
 
             return answer;
         }
-        public bool Task2(double d)
+        public bool Task2(int a, int b)
         {
-            bool answer = false;
+            bool answer = (a != 0 && b % a == 0) || (b != 0 && a % b == 0);
 
             // code here
 
@@ -24,7 +24,7 @@
         }
         public bool Task3(int a, int b)
         {
-            bool answer = false;
+            bool answer = (a * a == b) || (b * b == a) || (a * a * a == b) || (b * b * b == a);
 
             // code here
 
@@ -34,36 +34,38 @@
         }
         public double Task4(double d, double f, double g)
         {
-            double answer = 0;
+            double answer = f*f-4*d*g;
 
-            // code here
-
-            // end
 
             return answer;
         }
         public double Task5(double x)
         {
-            double answer = 0;
+            //double answer = 0;
+            if (x <= -1) return 1;
+            if (x <= 1) return -x;
 
             // code here
 
             // end
 
-            return answer;
+            return -1;
         }
-        public bool Task6(double circleS, double squareS)
+        public bool Task6(double squareS, double circleS)
         {
             bool answer = false;
+            double side = Math.Sqrt(squareS);
+            double radius = Math.Sqrt(circleS / Math.PI);
+
 
             // code here
 
             // end
-
+            answer = side * Math.Sqrt(2) / 2 <= radius;
             return answer;
         }
 
-        public double Task7(double d, double f)
+        public int Task7(bool s, bool t, bool f)
         {
             int answer = 0;
 
@@ -73,9 +75,10 @@
 
             return answer;
         }
-        public bool Task8(int a, int b, int c)
+        public bool Task8(int year, int pupils, int salary)
         {
             bool answer = false;
+            const int bank = 10000;
 
             // code here
             
