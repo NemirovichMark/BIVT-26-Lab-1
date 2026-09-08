@@ -7,6 +7,10 @@
             bool answer = false;
 
             // code here
+            if (Math.Abs(d) >= 1)
+            {
+            answer = true;
+            }
 
             // end
 
@@ -17,7 +21,10 @@
             bool answer = false;
 
             // code here
-
+            if (((d + f)/2) > 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +34,10 @@
             bool answer = false;
 
             // code here
-
+            if ((a + b) > (Math.Abs(a + b / 2)))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -37,7 +47,18 @@
             int answer = 0;
 
             // code here
-
+            if (a > b && a > c)
+            {
+                return a;
+            }
+                if (b > a && b > c)
+            {
+                return b;
+            }
+                if (c > a && c > b)
+            {
+                return c;
+            }
             // end
 
             return answer;
@@ -47,7 +68,14 @@
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) > 1)
+            {
+            return 0;
+            }
+            if (Math.Abs(x) <= 1)
+            {
+            return (x*x - 1);
+            }
             // end
 
             return answer;
@@ -68,7 +96,17 @@
             bool answer = true;
 
             // code here
-
+            if (n < 0)
+            {
+            answer = false;
+            }
+            else
+            {
+            if (n % 2 == 0)
+            {
+            answer = false;
+            }
+}
             // end
 
             return answer;
