@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -7,10 +7,13 @@
             bool answer = false;
 
             // code here
+            if (d >= 1 || d <= -1)
+            { answer = true; }
+            else
+            { answer = false; }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task2(double d, double f)
         {
