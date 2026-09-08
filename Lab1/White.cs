@@ -1,3 +1,5 @@
+using System.ComponentModel.Design;
+
 namespace Lab1
 {
     public class White
@@ -39,20 +41,31 @@ namespace Lab1
             int answer = 0;
 
             // code here
+            if (a > b)
+            { answer = a; }
+            else
+            {
+                answer = b;
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public double Task4(double d, double f)
         {
             double answer = 0;
 
             // code here
+            if (abs d > f)
 
-            // end
+            {
+                answer = d;
+            }
+       
 
-            return answer;
+                // end
+
+                return answer;
         }
         public double Task5(double x)
         {
