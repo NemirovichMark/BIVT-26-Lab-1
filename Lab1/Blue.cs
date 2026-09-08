@@ -1,36 +1,18 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Blue
     {
         public bool Task1(int a, int b)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            return (((a > 0) && (b > 0)) || ((a < 0) && (b < 0)));
         }
         public bool Task2(double d)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            return d % 1 != 0;
         }
         public bool Task3(int a, int b)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            return (a % b == 0);
         }
         public double Task4(double d, double f, double g)
         {
