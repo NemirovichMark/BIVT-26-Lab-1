@@ -8,7 +8,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (d>=1 || d<=-1)
+            { answer = true; }
+            else
+            { answer = false; }
             // end
 
             return answer;
@@ -18,6 +21,9 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            double cz = (d + f) / 2;
+            if (cz > 0)
+            { answer = true; }
 
             // end
 
@@ -28,7 +34,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            double smab = a + b;
+            double cz = (Math.Abs(a) + Math.Abs(b))/2;
+            if (smab > cz)
+            {  answer = true; }
             // end
 
             return answer;
@@ -38,7 +47,8 @@ namespace Lab1
             int answer = 0;
 
             // code here
-
+            int mxab =Math.Max(a, b);
+            answer = Math.Max(c, mxab);
             // end
 
             return answer;
@@ -48,10 +58,13 @@ namespace Lab1
             double answer = 0;
 
             // code here
+            if(Math.Abs(x)>1)
+            { answer = 0; }
+            else
+            { answer = (x*x-1); }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task6(double x, double y)
         {
