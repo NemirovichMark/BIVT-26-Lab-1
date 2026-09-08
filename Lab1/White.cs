@@ -7,7 +7,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            answer = true;
+            if (d > 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (n % 2 == 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +33,10 @@ namespace Lab1
             int answer = 0;
 
             // code here
-
+            if (a > b)
+                answer = a;
+            else
+                answer = b;
             // end
 
             return answer;
@@ -37,7 +46,10 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            if (abs(d) < abs(f))
+                answer = d;
+            else
+                answer = f;
             // end
 
             return answer;
