@@ -7,7 +7,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (d > 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +30,9 @@ namespace Lab1
             int answer = 0;
 
             // code here
-
+            Console.WriteLine($"a={a} b={b}");
+            answer = a + b;
+            Console.WriteLine(answer);
             // end
 
             return answer;
