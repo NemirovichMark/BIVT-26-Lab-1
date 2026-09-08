@@ -12,17 +12,15 @@ namespace Lab1
         }
         public bool Task3(int a, int b)
         {
-            return (a % b == 0);
+            return ((b != 0) && (a % b == 0));
         }
         public double Task4(double d, double f, double g)
         {
             double answer = 0;
 
-            // code here
 
-            // end
 
-            return answer;
+            return new[] { Math.Abs(d), Math.Abs(f), Math.Abs(g) }.Max();
         }
         public double Task5(double x)
         {
