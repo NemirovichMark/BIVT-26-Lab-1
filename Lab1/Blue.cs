@@ -88,9 +88,29 @@ namespace Lab1
 
             // code here
             int bank = a / 2 + b / 2 + c / 2;
+            int minCap = Math.Min(a, Math.Min(b, c));
+
+            if (bank % 3 == 0)
+            {
+                int shr = bank / 3;
+                return shr >= 1 && shr <= minCap;
+            }
+
+            if (bank % 3 == 2)
+            {
+                int shr = (bank + 1) / 3;
+                return shr >= 1 && shr <= minCap;
+            }
+            
+            if (bank % 3 == 2)
+            {
+                int shr = (bank + 1) / 3;
+                return shr >= 1 && shr <= minCap;
+            }
+            
             // end
 
-            return answer;
+            return false;
         }
     }
 }
