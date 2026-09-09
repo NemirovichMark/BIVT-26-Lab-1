@@ -56,23 +56,28 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            if (abs d > f)
-
+            if (Math.Abs(d) <= Math.Abs(f))
+            { answer = d; }
+            else
             {
-                answer = d;
+                answer = f;
             }
-       
+           
+            // end
 
-                // end
-
-                return answer;
+            return answer;
         }
         public double Task5(double x)
         {
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) > 1)
+            {
+                answer = 1;
+            }
+            else
+            {  answer = x; }
             // end
 
             return answer;
