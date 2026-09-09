@@ -7,7 +7,14 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (a > 0 && b > 0 && c > 0)
+            {
+                answer = true;
+            }
+            if (a < 0 && b < 0 && c < 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +24,20 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (a != 0) 
+            {
+                if (b % a == 0) 
+                {
+                    answer = true;
+                }
+            }
+            if (b != 0)
+            {
+                if (a % b == 0)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
@@ -27,7 +47,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (a*a == b || a*a*a == b || b*b == a || b*b*b == a)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -38,6 +61,8 @@ namespace Lab1
 
             // code here
 
+            answer = f * f - 4 * d * g;
+
             // end
 
             return answer;
@@ -47,7 +72,15 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            if (x <= -1) { 
+                answer = 1; 
+            } else if (x <= 1)
+            {
+                answer = -1 * x;
+            } else
+            {
+                answer = -1;
+            }
             // end
 
             return answer;
@@ -57,6 +90,11 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            
+            if (squareS <= 2/Math.PI * circleS)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -68,7 +106,36 @@ namespace Lab1
             int answer = 0;
 
             // code here
-
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
+                } else { 
+                    if (f)
+                    {
+                        answer = 10;
+                    } else
+                    {
+                        answer = 2;
+                    }
+                }
+            } else
+            {
+                if (t)
+                {
+                    answer = 3;
+                } else
+                {
+                    if (f)
+                    {
+                        answer = 5;
+                    } else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
             // end
 
             return answer;
