@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if (Math.Abs(d) >= 1)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,10 @@
             bool answer = false;
 
             // code here
-
+            if ((d + f / 2.0) > 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +33,12 @@
             bool answer = false;
 
             // code here
-
+            int sum = a+ b;
+            double sr = (Math.Abs(a) + Math.Abs(b)) / 2.0;
+            if (sum>sr)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
