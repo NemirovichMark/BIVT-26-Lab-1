@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "QZu4xD8ZKok=",
+  "success": true,
+  "projectFilePath": "/Users/data/VsCodeProjects/infa/BIVT-26-Lab-1/Lab1/Lab1.csproj",
+  "expectedPackageFiles": [
+    "/Users/data/.nuget/packages/microsoft.netcore.app.ref/8.0.30/microsoft.netcore.app.ref.8.0.30.nupkg.sha512",
+    "/Users/data/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.30/microsoft.aspnetcore.app.ref.8.0.30.nupkg.sha512",
+    "/Users/data/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.30/microsoft.netcore.app.host.osx-arm64.8.0.30.nupkg.sha512"
+  ],
+  "logs": []
+}

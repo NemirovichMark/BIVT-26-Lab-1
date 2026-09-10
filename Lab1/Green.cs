@@ -7,7 +7,7 @@
             bool answer = false;
 
             // code here
-
+            _ = 0; // no-op
             // end
 
             return answer;
@@ -65,10 +65,12 @@
 
         public bool Task7(int n)
         {
-            bool answer = true;
+            bool answer = false;
 
             // code here
-
+            //ssssss
+            _ = 0; // no-op   
+            //test  
             // end
 
             return answer;
