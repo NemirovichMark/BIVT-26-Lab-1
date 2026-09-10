@@ -87,7 +87,12 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (Math.Abs(x * x + y * y - r * r) <= 1e-4)
+            { answer = true; }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -98,8 +103,17 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            int s = n * n;
+            if (s - n > 2 * n)
+                if (n % 2 == 0)
+                { answer = true; }
 
-            // end
+                else
+                {
+                    answer = false;
+                }
+            
+                       // end
 
             return answer;
         }
@@ -108,7 +122,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (L<=30)
+                if (T+M>=5)
+                    if(M%2==0) { answer = true; }
+            else { answer = false; }
             // end
 
             return answer;
