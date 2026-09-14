@@ -5,10 +5,8 @@
         public bool Task1(double d)
         {
             bool answer = false;
-
-            // code here
-
-            // end
+            double ab = Math.Abs(d);
+            answer = (ab >= 1);
 
             return answer;
         }
@@ -16,9 +14,11 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            double su;
+            su = d + f;
+            double sr;
+            sr = su / 2;
+            answer = (sr > 0);
 
             return answer;
         }
