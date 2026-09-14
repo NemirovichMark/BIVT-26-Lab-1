@@ -1,14 +1,13 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
         public bool Task1(double d)
         {
             bool answer = false;
+            double a = Math.Abs(d);
+            answer = a>= 1;
 
-            // code here
-
-            // end
 
             return answer;
         }
