@@ -7,6 +7,8 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            answer = d > 0;
+
 
             // end
 
@@ -17,6 +19,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            answer = n % 2 == 0;
 
             // end
 
@@ -27,6 +30,7 @@ namespace Lab1
             int answer = 0;
 
             // code here
+            
 
             // end
 
