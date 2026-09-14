@@ -51,9 +51,9 @@ namespace Lab1
             // code here
             int first = Math.Max(a, b);
             int second = Math.Max(b, c);
-            { 
-                answer = Math.Max(first, second);
-            }
+            
+            answer = Math.Max(first, second);
+            
 
 
 
@@ -66,7 +66,6 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            double a = x * x;
             if (Math.Abs(x) <= 1) 
             { 
                 answer = x * x - 1; 
