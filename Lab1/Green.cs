@@ -7,7 +7,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (Math.Abs(d) >= 1)
+            if  (Math.Abs(d) >= 1)
             {
                 answer = true;
             }
@@ -21,8 +21,8 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (((d + f) / 2) > 0)
-            {
+            if (((d+f) / 2) >0) 
+            { 
                 answer = true;
             }
 
@@ -35,8 +35,8 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if ((a + b) > ((Math.Abs(a) + Math.Abs(b)) / 2.0))
-            {
+            if ((a+b)>((Math.Abs(a) +Math.Abs(b)) / 2.0)) 
+            { 
                 answer = true;
             }
 
@@ -51,9 +51,9 @@ namespace Lab1
             // code here
             int first = Math.Max(a, b);
             int second = Math.Max(b, c);
-
+            
             answer = Math.Max(first, second);
-
+            
 
 
 
@@ -66,12 +66,12 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            if (Math.Abs(x) <= 1)
-            {
-                answer = x * x - 1;
+            if (Math.Abs(x) <= 1) 
+            { 
+                answer = x * x - 1; 
             }
             else
-            {
+            { 
                 answer = 0;
             }
 
@@ -109,14 +109,13 @@ namespace Lab1
             bool answer = true;
 
             // code here
-            if (n < 0)
-            {
-                answer = false;
+            if (n  <0) 
+            { 
+                answer = false; 
             }
-            else
-                if (n % 2 == 0)
+            else if (n%2 == 0 ) 
                 {
-                    answer = false;
+                    answer = false; 
                 }
 
             // end
@@ -130,7 +129,7 @@ namespace Lab1
             // code here
             int teaCount = (X + 1) / 2;
             int shift = teaCount * Y;
-            if (X >= 7 && shift >= 240 && shift <= 360)
+            if (X>=7 && shift >= 240 && shift <= 360) 
             {
                 answer = true;
             }
@@ -140,3 +139,5 @@ namespace Lab1
         }
     }
 }
+
+
