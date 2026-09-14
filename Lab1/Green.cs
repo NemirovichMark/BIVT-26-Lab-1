@@ -35,7 +35,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if ((a+b)>((Math.Abs(a) +Math.Abs(b)) / 2)) 
+            if ((a+b)>((Math.Abs(a) +Math.Abs(b)) / 2.0)) 
             { 
                 answer = true;
             }
