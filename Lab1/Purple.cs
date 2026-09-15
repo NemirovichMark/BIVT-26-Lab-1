@@ -26,7 +26,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (a%b == 0 || b % a == 0)
+            if (b != 0 && a % b == 0 || a != 0 && b % a == 0)
             {
                 answer = true;
             }
@@ -94,9 +94,8 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            double a = Math.Sqrt(squareS);
-            double b = Math.Sqrt(circleS / Math.PI);
-            if (b * 2 <= a)
+            
+            if (circleS >= Math.PI * squareS / 2)
             {
                 answer = true;
             }
