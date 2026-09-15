@@ -1,0 +1,15 @@
+2026-09-15T19:43:56.9122857+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.4.3+c252b64ad913ea9411fc5d17bfd5580d2d061497
+2026-09-15T19:43:56.9287005+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-09-15T19:43:56.9295828+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-09-15T19:43:56.9295866+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 19:43:56.875
+2026-09-15T19:43:56.9339979+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 21780
+2026-09-15T19:43:56.9342060+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.31
+2026-09-15T19:43:56.9342769+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.31\System.Private.CoreLib.dll
+2026-09-15T19:43:56.9343059+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-09-15T19:43:56.9343108+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\Artem\source\repos\saddsada\Lab1test\bin\Debug\net8.0\Lab1test.dll
+2026-09-15T19:43:56.9346765+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\Artem\source\repos\saddsada\Lab1test\bin\Debug\net8.0\Log --results-directory C:\Users\Artem\source\repos\saddsada\Lab1\TestResults --client-port 56790'
+2026-09-15T19:43:56.9368949+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-09-15T19:43:58.6871126+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-09-15T19:43:58.6909306+00:00 Microsoft.Testing.Platform.Configurations.JsonConfigurationSource+JsonConfigurationProvider INFORMATION Config file 'C:\Users\Artem\source\repos\saddsada\Lab1test\bin\Debug\net8.0\Lab1test.testconfig.json' not found.
+2026-09-15T19:43:58.6921394+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2026-09-15T19:43:59.1795590+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.6.4' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
