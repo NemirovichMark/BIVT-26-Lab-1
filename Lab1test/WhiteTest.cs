@@ -9,7 +9,7 @@ namespace Lab1_test
         [TestMethod]
         public void Test1()
         {
-            // Arrange
+            //  Arrange
             var input = new double[] { 0, 1.5, 1, 3, -1, -2.3, 0.78, -0.3};
             var answer = new bool[] { false, true, true, true, false, false, true, false };
             var test = new bool[answer.Length];
