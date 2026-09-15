@@ -7,17 +7,23 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if (d > 0)
+            {
+                answer = true;
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task2(int n)
         {
             bool answer = false;
 
             // code here
-
+            if (n % 2 == 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -28,6 +34,14 @@ namespace Lab1
 
             // code here
 
+            if (a > b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
             // end
 
             return answer;
@@ -37,7 +51,9 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            
+            if (Math.Abs(d) <= Math.Abs(f)) { answer = d; }
+            else { answer = f; }
             // end
 
             return answer;
@@ -47,7 +63,8 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) <= 1) { answer = x; }
+            else { answer = 1; }
             // end
 
             return answer;
@@ -58,6 +75,7 @@ namespace Lab1
 
             // code here
 
+            if (Math.Abs(Math.Pow(x, 2) + Math.Pow(y, 2) - Math.Pow(r, 2)) <= Math.Pow(10, -4)) { answer = true; }
             // end
 
             return answer;
@@ -68,7 +86,14 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            int s = (int)Math.Pow(n, 2);
+            if (s - n > n * 2)
+            {
+                if (n % 2 == 0)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
@@ -79,6 +104,10 @@ namespace Lab1
 
             // code here
 
+            int orientiri = T + M;
+            if ((L <= 30) && (orientiri >= 5) && (M % 2 == 0)) {
+                answer = true;
+            }
             // end
 
             return answer;
