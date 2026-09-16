@@ -128,9 +128,9 @@
             bool answer = false;
 
             // code here
-            int teadays = (X + 1) / 2;
-            int sleep = teadays * Y;
-            if (X >= 7 && sleep >= 240 && sleep <= 360)
+            int tea = (X + 1) / 2;
+            int sleeptime = tea * Y;
+            if (X >= 7 && sleeptime >= 240 && sleeptime <= 360)
             {
                 answer = true;
             }
