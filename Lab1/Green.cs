@@ -84,7 +84,19 @@
             bool answer = false;
 
             // code here
-
+             double Limit;
+             if (x < 0)
+             {
+                 Limit = 1 + x;
+             }
+             else
+             {
+                 Limit = 1 - x;
+             }
+             if (y >= 0 && y <= Limit)
+             {
+                 answer = true;
+             }
             // end
 
             return answer;
@@ -116,7 +128,12 @@
             bool answer = false;
 
             // code here
-
+            int teadays = (X + 1) / 2;
+            int sleep = teadays * Y;
+            if (X >= 7 && sleep >= 240 && sleep <= 360)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
