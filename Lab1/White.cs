@@ -106,7 +106,7 @@ if (Math.Abs(x) > 1)
             bool answer = false;
 
             // code here
-            int s n * n;
+            int s = n * n;
             
 if (s - n > 2 * n && n % 2== 0)
             {
