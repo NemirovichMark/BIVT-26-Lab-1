@@ -52,15 +52,15 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            Console.WriteLine($"d={d}, f={f}");
+            
             if (Math.Abs (d) <= Math.Abs (f))
             {
-                Console.WriteLine($"d");
+                
                 return d;
             }
             else
             {
-                Console.WriteLine($"f");
+                
                 return f;
             }
             // end
@@ -104,33 +104,31 @@ namespace Lab1
 
         public bool Task7(int n)
         {
-            bool answer = false;
+
 
             // code here
             int s = n * n;
+            bool answer = false;
             if(s - n>2*n)
             {
                 if(n%2==0)
                 {
                     answer = true;
                 }
-                else
-                {
-                    return answer;
-                }
             }
-            else
-            {
-                answer = true;
-            }
+            return answer;
 
                 // end
-
-                return answer;
         }
         public bool Task8(double L, int T, int M)
         {
             bool answer = false;
+            {
+                bool timevalid = (L / 10) <= 3.0;
+                bool landmarks = (T + M)>=5;
+                bool Mount = (M % 2 == 0);
+                return timevalid && landmarks && Mount;
+            }
 
             // code here
 
