@@ -52,7 +52,7 @@ if (d > 0)
             double answer = 0;
 
             // code here
-            if (Math.Abs(d) < Math.Abs(f))
+            if (Math.Abs(d) > Math.Abs(f))
         {
             answer = d;
         }
@@ -106,7 +106,9 @@ if (Math.Abs(x) > 1)
             bool answer = false;
 
             // code here
-if (n % 2 == 0)
+            int s n * n;
+            
+if (s - n > 2 * n && n % 2== 0)
             {
                 answer = true;
             }
