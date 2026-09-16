@@ -56,7 +56,7 @@ namespace Lab1
             double a = x * x;
             if (Math.Abs(x) <= 1) { answer = a - 1; }
             else { answer = 0; }
-                // end
+            // end
 
                 return answer;
         }
@@ -77,7 +77,6 @@ namespace Lab1
             if (y <= a && y >= 0)
             {
                 answer = true;
-
             // end
 
             return answer;
@@ -93,7 +92,7 @@ namespace Lab1
             {
                 if (n%2==0) { answer = false; }
             }
-                // end
+            // end
 
                 return answer;
         }
@@ -108,7 +107,6 @@ namespace Lab1
             {
                 answer = true;
             }
-            
             // end
 
                 return answer;
