@@ -110,14 +110,13 @@ if (n % 2 == 0)
             {
                 answer = true;
             }
-        }
+        
 
         return answer;
     }
             // end
 
-            return answer;
-        }
+        
         public bool Task8(double L, int T, int M)
         {
             bool answer = false;
@@ -130,9 +129,3 @@ if (L <= 30 && (T + M) >= 5 && M % 2 == 0)
 
         return answer;
     }
-            // end
-
-            return answer;
-        }
-    }
-}
