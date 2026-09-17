@@ -4,6 +4,9 @@
     {
         public static void Main()
         {
+
+            Blue blue = new Blue();
+            Console.WriteLine(blue.Task8(1,6,1));
             //White white = new White();
             //Console.WriteLine(white.Task1(1.2));
             //Console.WriteLine(white.Task2(2));
