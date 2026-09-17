@@ -6,8 +6,6 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
             if (a == 0 || b == 0 || c == 0)
             {
                 answer = false;
@@ -17,57 +15,41 @@ namespace Lab1
                 answer = true;
             }
 
-            // end
-
-                return answer;
+            return answer;
         }
         public bool Task2(int a, int b)
         {
             bool answer = false;
 
-            // code here
-
-            if ( (a % b == 0) || (b % a == 0) )
+            if ((b != 0 && a % b == 0) || (a != 0 && b % a == 0))
             {
                 answer = true;
             }
 
-            // end
-
-                return answer;
+            return answer;
         }
         public bool Task3(int a, int b)
         {
             bool answer = false;
 
-            // code here
-
-            if ( (Math.Pow(a, 2) == b) || (Math.Pow(a, 3) == b) || (Math.Pow(b,2) == a) || (Math.Pow(b, 2) == b))
+            if ( (Math.Pow(a, 2) == b) || (Math.Pow(a, 3) == b) || (Math.Pow(b,2) == a) || (Math.Pow(b, 2) == a))
             {
                 answer = true;
             }
-            
-            // end
 
-                return answer;
+            return answer;
         }
         public double Task4(double d, double f, double g)
         {
             double answer = 0;
 
-            // code here
-
             answer = Math.Pow(f, 2) - 4 * d * g;
-
-            // end
 
             return answer;
         }
         public double Task5(double x)
         {
             double answer = 0;
-
-            // code here
 
             if (x <= -1)
             {
@@ -81,27 +63,25 @@ namespace Lab1
             {
                 answer = -1;
             }
-            
-            // end
 
-                return answer;
+            return answer;
         }
         public bool Task6(double squareS, double circleS)
         {
             bool answer = false;
 
-            // code here
-            
-            // end
-
+            double diag = Math.Sqrt(squareS) * Math.Sqrt(2);
+            double diam = Math.Sqrt(circleS / Math.PI) * 2;
+            if (diam >= diag)
+            {  
+                answer = true; 
+            }
             return answer;
         }
 
         public int Task7(bool s, bool t, bool f)
         {
             int answer = 0;
-
-            // code here
             
             if (s) 
             {
@@ -139,7 +119,6 @@ namespace Lab1
                     }
                 }
             }
-            // end
 
             return answer;
         }
@@ -147,10 +126,21 @@ namespace Lab1
         {
             bool answer = false;
             const int bank = 10000;
-
-            // code here
-            
-            // end
+            int b = bank;
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                double a = pupils / 7.0;
+                double auror = Math.Ceiling(a);
+                b -= (int)auror * salary + pupils * 5;
+                if (b >= 0)
+                {
+                    answer = true;
+                }
+            }
 
             return answer;
         }
