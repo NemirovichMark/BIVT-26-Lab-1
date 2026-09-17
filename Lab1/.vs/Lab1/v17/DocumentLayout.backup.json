@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gaga\\source\\repos\\BIVT-26-Lab-1_2\\Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD929B85-8383-59F5-FEC3-F61523F1105B}|..\\Lab1test\\Lab1test.csproj|c:\\users\\gaga\\source\\repos\\bivt-26-lab-1_2\\lab1test\\bluetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\users\\gaga\\source\\repos\\bivt-26-lab-1_2\\lab1\\blue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:blue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlueTest.cs",
+              "DocumentMoniker": "C:\\Users\\Gaga\\source\\repos\\BIVT-26-Lab-1_2\\Lab1test\\BlueTest.cs",
+              "RelativeDocumentMoniker": "..\\Lab1test\\BlueTest.cs",
+              "ToolTip": "C:\\Users\\Gaga\\source\\repos\\BIVT-26-Lab-1_2\\Lab1test\\BlueTest.cs",
+              "RelativeToolTip": "..\\Lab1test\\BlueTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T08:48:47.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Blue.cs",
+              "DocumentMoniker": "C:\\Users\\Gaga\\source\\repos\\BIVT-26-Lab-1_2\\Lab1\\Blue.cs",
+              "RelativeDocumentMoniker": "Blue.cs",
+              "ToolTip": "C:\\Users\\Gaga\\source\\repos\\BIVT-26-Lab-1_2\\Lab1\\Blue.cs",
+              "RelativeToolTip": "Blue.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T08:48:37.568Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
