@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if ((a > 0 && b > 0) || (a < 0 && b < 0))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,10 @@
             bool answer = false;
 
             // code here
-
+            if (d % 1 != 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +33,10 @@
             bool answer = false;
 
             // code here
-
+            if (b!=0 && a % b == 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -37,7 +46,24 @@
             double answer = 0;
 
             // code here
-
+            // Console.Write("Число d");
+            // double d = double.Parse(Console.ReadLine())
+            // Console.Write("Число f");
+            // double f = double.Parse(Console.ReadLine())
+            // Console.Write("Число g");
+            // double g = double.Parse(Console.ReadLine())
+            if ((Math.Abs(d)>Math.Abs(f) )&&( Math.Abs(d)>Math.Abs(g)));
+            {
+                Console.Write(d);
+            }
+            if ((Math.Abs(f)>Math.Abs(d) )&&( Math.Abs(f)>Math.Abs(g)));
+            {
+                Console.Write(f);
+            }
+            if ((Math.Abs(g)>Math.Abs(f) )&&( Math.Abs(g)>Math.Abs(d)));
+            {
+                Console.Write(g);
+            }
             // end
 
             return answer;
