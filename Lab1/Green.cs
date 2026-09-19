@@ -1,14 +1,14 @@
-﻿namespace Lab1
+using System.Net.Http.Headers;
+using System.Xml.Serialization;
+
+namespace Lab1
 {
     public class Green
     {
         public bool Task1(double d)
         {
             bool answer = false;
-
-            // code here
-
-            // end
+            if (Math.Abs(d) >= 1) answer= true;
 
             return answer;
         }
@@ -16,9 +16,7 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if(((d+f)/2)>0) answer= true;
 
             return answer;
         }
@@ -26,17 +24,17 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+             if(a+b>(Math.Abs(a)+Math.Abs(b))/2) answer = true;
 
             return answer;
         }
         public int Task4(int a, int b, int c)
         {
             int answer = 0;
+            int[] arr = {a, b, c};
 
-            // code here
+            answer = arr.Max();
+          
 
             // end
 
@@ -46,8 +44,15 @@
         {
             double answer = 0;
 
-            // code here
+            switch (Math.Abs(x)){
+                case <=1:
+                    answer = x * x - 1;
+                    break;
+                case > 1:
+                    answer = 0;
+                    break;
 
+                }
             // end
 
             return answer;
@@ -55,10 +60,8 @@
         public bool Task6(double x, double y)
         {
             bool answer = false;
-
-            // code here
-
-            // end
+            if (y >= 0 && ((x < 0 && y <= 1 + x) || (x >= 0 && y <= 1 - x))) { answer = true; }
+            
 
             return answer;
         }
@@ -67,9 +70,10 @@
         {
             bool answer = true;
 
-            // code here
+            if (n < 0) { answer = false; }
+            else if (n % 2 == 0) { answer = false; }
 
-            // end
+          
 
             return answer;
         }
@@ -77,7 +81,7 @@
         {
             bool answer = false;
 
-            // code here
+            if (X >= 7 && ((X + 1) / 2) * Y >= 240 && ((X + 1) / 2) * Y <= 360) { answer = true; }
 
             // end
 
