@@ -7,6 +7,10 @@
             bool answer = false;
 
             // code here
+            if (Math.Abs(d)>=1)
+                answer = true;
+            else
+                answer = false;
 
             // end
 
@@ -17,6 +21,10 @@
             bool answer = false;
 
             // code here
+            if ((f+d)/2>0)
+                answer = true;
+            else
+                answer = false;
 
             // end
 
