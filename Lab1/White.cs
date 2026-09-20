@@ -7,14 +7,11 @@ namespace Lab1
             bool answer = false;
 
             // code here
+
             if (d > 0)
-            {
-                answer = true;
-            }
-            else
-            {
-                answer = false;
-            }
+
+            { answer = true; }
+
             // end
 
             return answer;
@@ -22,30 +19,31 @@ namespace Lab1
         public bool Task2(int n)
         {
             bool answer = false;
-
+             
             // code here
-            if (n % 2 == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-                // end
 
-                return answer;
+            if (n % 2 == 0)
+            { 
+                answer = true; 
+            }
+
+
+            // end
+
+            return answer;
         }
+        
         public int Task3(int a, int b)
         {
             int answer = 0;
 
             // code here
+
             if (a > b)
-            {
+            { answer = a; }
 
-            }
-
+            else
+            { answer = b; }
 
             // end
 
@@ -57,6 +55,14 @@ namespace Lab1
 
             // code here
 
+            if (Math.Abs(d) <= Math.Abs(f))
+            {
+                answer = d; 
+            }
+
+            else
+            { answer = f; }
+
             // end
 
             return answer;
@@ -66,7 +72,16 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            
+            if (Math.Abs(x) > 1)
+            { 
+                answer =  1; 
+            }
+            else
+            {
+                answer = x; 
+            }
+       
             // end
 
             return answer;
@@ -76,6 +91,11 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if (Math.Abs(Math.Pow(x, 2) +
+                Math.Pow(y, 2) -
+                Math.Pow(r, 2)) <= Math.Pow(10, -4))
+
+                    {  answer = true; }
 
             // end
 
@@ -84,10 +104,16 @@ namespace Lab1
 
         public bool Task7(int n)
         {
+            int s = n * n;
             bool answer = false;
 
             // code here
-
+            if (s - n > 2 * n)
+            { 
+                if (n % 2 == 0 ) { 
+                    answer = true; 
+                }
+            }
             // end
 
             return answer;
@@ -97,7 +123,9 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if ( L <= 30 && (T + M) >= 5 && M % 2 == 0)
+            { answer = true; }
+           
             // end
 
             return answer;
