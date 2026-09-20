@@ -35,6 +35,11 @@
             bool answer = false;
 
             // code here
+            if ((a+b)>((Math.Abs(a) + Math.Abs(b)) / 2))
+                answer = true;
+            else
+                answer = false;
+            
 
             // end
 
