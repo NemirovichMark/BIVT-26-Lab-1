@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -117,7 +117,13 @@
             bool answer = false;
 
             // code here
+            int a = (X + 1) / 2;
+            int b = 4 * 60 - a * Y;
+            int c = 14 - Math.Min(X, 7);
 
+            int d = (7 * 60 - ((b % 1440 + 1440) % 1440) + 1440) % 1440;
+
+            answer = c == 7 && d >= 420 && d <= 540;
             // end
 
             return answer;
