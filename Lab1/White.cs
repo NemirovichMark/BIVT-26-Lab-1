@@ -1,5 +1,5 @@
 namespace Lab1
-{
+{ 
     public class White
     {
         public bool Task1(double d)
@@ -7,6 +7,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            answer = d > 0;
 
             // end
 
@@ -17,6 +18,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            answer = n % 2 == 0;
 
             // end
 
@@ -27,6 +29,14 @@ namespace Lab1
             int answer = 0;
 
             // code here
+            if (a > b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
 
             // end
 
@@ -37,6 +47,14 @@ namespace Lab1
             double answer = 0;
 
             // code here
+            if (Math.Abs(d)< Math.Abs(f))
+            {
+                answer = d;
+            }
+            else
+            {
+                answer = f;
+            }
 
             // end
 
@@ -47,6 +65,14 @@ namespace Lab1
             double answer = 0;
 
             // code here
+            if (Math.Abs(x)>1)
+            {
+                answer = 1;
+            }
+            else
+            { 
+                answer = x;
+            }
 
             // end
 
@@ -57,6 +83,11 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            double check = Math.Abs(x * x + y * y - r * r);
+            if (check <= 0.0001)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -68,6 +99,15 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            int s = n * n;
+            if (s - n > 2 * n)
+            {
+                if (n % 2 == 0)
+                {
+                    answer = true;
+                }
+            }
+
 
             // end
 
@@ -78,6 +118,13 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            bool timeCondition = (L / 10.0) <= 3.0;
+            bool landmarksCondition = (T + M) >= 5;
+            bool mountainsCodtion = (M % 2 == 0);
+            if (timeCondition && landmarksCondition && mountainsCodtion)
+            {
+                answer = true;
+            }
 
             // end
 
