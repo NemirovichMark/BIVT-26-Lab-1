@@ -66,6 +66,10 @@
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+                answer = 0;
+            if (Math.Abs(x) <= 1)
+                answer = x * x - 1;
 
             // end
 
