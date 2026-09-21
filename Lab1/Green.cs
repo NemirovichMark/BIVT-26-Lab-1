@@ -50,6 +50,12 @@
             int answer = 0;
 
             // code here
+            if (a >= b && a >= c)
+                answer = a;
+            else if (b >= a && b >= c)
+                answer = b;
+            else
+                answer = c;
 
             // end
 
