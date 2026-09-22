@@ -116,10 +116,30 @@ namespace Lab1
         {
             bool answer = false;
             const int bank = 10000;
-
-            // code here
+            int aurora;
+            if (pupils % 7 == 0)
+            {
+                aurora = pupils / 7;
+            }
+            else
+            {
+                aurora = pupils / 7+1;
+            }
             
-            // end
+            int auroraS = aurora*salary;
+            
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            {
+                answer = false;
+            }
+            else
+            {
+                if ((bank >= auroraS + 5 * pupils) && (pupils <= 7*aurora))
+                {
+                    answer = true;
+                }
+            }
+            
 
             return answer;
         }
