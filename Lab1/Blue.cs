@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if ((a > 0 && b > 0) || (a < 0 && b < 0))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,10 @@
             bool answer = false;
 
             // code here
-
+            if (d % 1 != 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +33,11 @@
             bool answer = false;
 
             // code here
-
+            if (b!=0 && a % b == 0)
+            {
+                answer = true;
+            }
+            
             // end
 
             return answer;
@@ -37,7 +47,24 @@
             double answer = 0;
 
             // code here
-
+            // Console.Write("Число d");
+            // double d = double.Parse(Console.ReadLine())
+            // Console.Write("Число f");
+            // double f = double.Parse(Console.ReadLine())
+            // Console.Write("Число g");
+            // double g = double.Parse(Console.ReadLine())
+            if ((Math.Abs(d)>Math.Abs(f) )&&( Math.Abs(d)>Math.Abs(g)))
+            {
+                answer=d;
+            }
+            if ((Math.Abs(f)>Math.Abs(d) )&&( Math.Abs(f)>Math.Abs(g)))
+            {
+                answer=f;
+            }
+            if ((Math.Abs(g)>Math.Abs(f) )&&( Math.Abs(g)>Math.Abs(d)))
+            {
+                answer=g;
+            }
             // end
 
             return answer;
@@ -47,7 +74,18 @@
             double answer = 0;
 
             // code here
-
+            if ((-1 < x) && (x <= 0))
+            {
+                answer = x + 1;
+            }
+            else if (x <= -1)
+            {
+                answer = 0;
+            }
+            else if (x > 0)
+            {
+                answer = 1;
+            }
             // end
 
             return answer;
@@ -57,7 +95,14 @@
             bool answer = false;
 
             // code here
-
+            if ((2*Math.Sqrt(circleS/Math.PI))<=Math.Sqrt(squareS))
+            {
+                answer = true ;
+            }
+            else
+            {
+                answer = false ;
+            }
             // end
 
             return answer;
@@ -68,7 +113,29 @@
             int answer = 0;
 
             // code here
-
+            //int answer = 0;
+            if (Math.Abs(d)<Math.Abs(f))
+            {
+                if (d > 0)
+                {
+                    answer = -1;
+                }
+                else
+                {
+                    return answer;
+                }
+            }
+            else
+            {
+                if (f>0)
+                {
+                    answer = 1;
+                }
+                else
+                {
+                    return answer;
+                }
+            }
             // end
 
             return answer;
@@ -78,7 +145,30 @@
             bool answer = false;
 
             // code here
-            
+            int first = a / 2;
+            int second = b / 2;
+            int third = c / 2;
+            int sum = first + second + third;
+            if (sum % 3 == 0)
+            {
+                int coins = sum / 3;
+
+                if (coins >= 1 && coins <= a && coins <= b && coins <= c)
+                {
+                    return true;
+                }
+            }
+            if (sum % 3 == 2)
+            {
+                int coins = (sum + 1) / 3;
+
+                if (coins >= 1 && coins <= a && coins <= b && coins <= c)
+                {
+                    return true;
+                }
+            }
+
+            return false;
             // end
 
             return answer;
