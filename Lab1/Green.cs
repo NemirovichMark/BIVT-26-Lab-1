@@ -48,7 +48,8 @@ namespace Lab1
             int answer = 0;
 
             // code here
-
+            int ch = Math.Max(a, b);
+            answer = Math.Max(ch, c);
             // end
 
             return answer;
@@ -79,7 +80,17 @@ namespace Lab1
             bool answer = true;
 
             // code here
-
+            if (n<0)
+            {
+                answer=false;
+            }
+            else
+            {
+                if (n%2==0)
+                {
+                    answer = false;
+                }
+            }
             // end
 
             return answer;
@@ -89,7 +100,14 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (X>=7)
+            {
+                int sp = ((X+1)/2)*Y;
+                if (28*60-sp<=24*60 && 28*60-sp>=22*60)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
