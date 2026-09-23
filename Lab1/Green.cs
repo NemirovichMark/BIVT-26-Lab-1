@@ -80,6 +80,11 @@
             bool answer = false;
 
             // code here
+            if (y >= 0 && y <= 1 - Math.Abs(x))
+                answer = true;
+            else
+                answer = false;
+
 
             // end
 
@@ -91,6 +96,12 @@
             bool answer = true;
 
             // code here
+            if (n < 0)
+                answer = false;
+            else if (n % 2 == 0)
+                answer = false;
+            else
+                answer = true;
 
             // end
 
@@ -101,6 +112,10 @@
             bool answer = false;
 
             // code here
+            if (X >= 7 && ((X+1)/2)*Y >= 240 && ((X + 1) / 2 )* Y <= 360)
+                answer = true;
+            else
+                answer = false;
 
             // end
 
