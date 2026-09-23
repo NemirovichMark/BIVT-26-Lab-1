@@ -6,9 +6,18 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (a > 0 && b > 0 && c > 0)
+            {
+                answer = true;
+            }
+            else if (a < 0 && b < 0 && c < 0)
+            {
+                answer = true;
+            }
+            else if (a == 0 && b == 0 && c == 0)
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -16,9 +25,15 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (b != 0 && a % b == 0)
+            {
+                 
+                answer = true;
+            }
+            else if (a != 0 && b % a == 0)
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -26,9 +41,14 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if ((a == b * b) || (a == b * b * b))
+            {
+                answer = true;
+            }
+            else if ((b == a * a) || (b == a * a * a))
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -36,9 +56,7 @@ namespace Lab1
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            answer = (f * f) - (4 * d * g);
 
             return answer;
         }
@@ -46,9 +64,15 @@ namespace Lab1
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if ((x >= -1) && (x <= 1))
+            {
+                answer = -x;
+            }
+            else
+            {
+                answer = x > 1 ? -1 : 1;
+                
+            }
 
             return answer;
         }
@@ -56,9 +80,14 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            double d = (Math.Sqrt(circleS / Math.PI))*2;
+            double diag = Math.Sqrt(squareS)*Math.Sqrt(2);
+            if (d >= diag)
+            {
+                answer = true;
+            }
+            
+            
 
             return answer;
         }
@@ -67,9 +96,42 @@ namespace Lab1
         {
             int answer = 0;
 
-            // code here
-
-            // end
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer=10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
 
             return answer;
         }
@@ -78,9 +140,24 @@ namespace Lab1
             bool answer = false;
             const int bank = 10000;
 
-            // code here
-            
-            // end
+            if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+            {
+                answer=false;
+            }
+            else
+            {
+                int aurora = pupils % 7 == 0 ? pupils / 7 : (pupils / 7) + 1;
+                int merch = pupils * 5;
+                int zp_aurora = aurora*salary;
+                if (zp_aurora + merch > bank)
+                {
+                    answer=false;
+                }
+                else
+                {
+                    answer=true;
+                }
+            }
 
             return answer;
         }
