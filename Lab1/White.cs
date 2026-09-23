@@ -43,7 +43,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            if (Math.Abs(d) <Math.Abs(f))
+            if (Math.Abs(d)<=Math.Abs(f))
                 answer = d;
             else
                 answer = f;
@@ -84,12 +84,15 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            int s =n*n;
+            int s = n * n;
             if (s - n > 2 * n)
-                if (n % 2 == 0)
+            {
+                if (n%2==0)
+                {
                     answer = true;
-                else
-                    return answer;
+                }
+            }
+
             // end
          
             return answer;
