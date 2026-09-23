@@ -1,3 +1,5 @@
+using System.ComponentModel.Design;
+
 namespace Lab1
 {
     public class Purple
@@ -6,9 +8,20 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
+            if (a > 0 && b > 0 && c > 0)
+            {
+                answer = true;
+            }
+            else if (a == 0 && b == 0 && c == 0)
+            {
+                answer = true;
+            }
+            else if (a < 0 && b < 0 && c < 0)
 
-            // end
+            {
+                answer = true;
+            }
+                
 
             return answer;
         }
@@ -16,9 +29,10 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if ((b != 0 && a % b == 0) || (a != 0 && b % a == 0))
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -26,9 +40,14 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (b * b == a || a * a == b)
+            {
+                answer = true;
+            }
+            else if (b * b * b == a || a * a * a == b)
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -36,9 +55,9 @@ namespace Lab1
         {
             double answer = 0;
 
-            // code here
+            double D = (f * f) - (4 * d * g);
 
-            // end
+            answer = D;
 
             return answer;
         }
@@ -46,9 +65,18 @@ namespace Lab1
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (x <= -1)
+            {
+                answer = 1;
+            }
+            else if (x > -1 && x <= 1)
+            {
+                answer = -x;
+            }
+            else if (x > 1)
+            {
+                answer = -1;
+            }
 
             return answer;
         }
@@ -56,9 +84,18 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
+            double s = Math.Sqrt(squareS);
+            double d = Math.Sqrt((circleS * 4) / (Math.PI));
 
-            // end
+            double diagonale = Math.Sqrt(s * s + s * s);
+
+            if (diagonale <= d)
+            {
+                answer = true;
+            }
+            
+            
+            
 
             return answer;
         }
@@ -67,20 +104,52 @@ namespace Lab1
         {
             int answer = 0;
 
-            // code here
+            if (s == true && t == true)
+            {
+                answer = 6;
+            }
+            else if (s == true && t == false && f == true)
+            {
+                answer = 10;
+                
+            }
+            else if (s == true && t == false && f == false)
+            {
+                answer = 2;
+            }
 
-            // end
-
+            else if (s == false && t == true)
+            {
+                answer = 3;
+            }
+            else if (s == false && t == false && f == true)
+            {
+                answer = 5;
+            }
+            else if (s == false && t == false && f == false)
+            {
+                answer = 1;
+            }
+                
             return answer;
         }
         public bool Task8(int year, int pupils, int salary)
         {
             bool answer = false;
             const int bank = 10000;
+            int aurora = (pupils + 6) / 7;
+            int auroraS = aurora * salary;
+            int merch = pupils * 5;
+            int total = merch + auroraS;
 
-            // code here
-            
-            // end
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+            {
+                answer = false;
+            }
+            else if (bank >= total)
+            {
+                answer = true;
+            }
 
             return answer;
         }

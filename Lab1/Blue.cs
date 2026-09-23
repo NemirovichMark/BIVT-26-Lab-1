@@ -6,9 +6,10 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if ((a == 0 && b == 0) || (a > 0 && b > 0) || (a < 0 && b < 0))
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -16,9 +17,14 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (d % 1 == 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -26,9 +32,15 @@
         {
             bool answer = false;
 
-            // code here
+            if (b == 0)
+            {
+                answer = false;
+            }
 
-            // end
+            else if (a % b == 0)
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -36,9 +48,18 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (Math.Abs(d) > Math.Abs(f) && Math.Abs(d) > Math.Abs(g))
+            {
+                answer = d;
+            }
+            else if (Math.Abs(f) > Math.Abs(d) && Math.Abs(f) > Math.Abs(g))
+            {
+                answer = f;
+            }
+            else
+            {
+                answer = g;
+            }
 
             return answer;
         }
@@ -46,9 +67,18 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (x <= -1)
+            {
+                answer = 0;
+            }
+            else if (x > -1 && x <= 0)
+            {
+                answer = x + 1;
+            }
+            else if (x > 0)
+            {
+                answer = 1;
+            }
 
             return answer;
         }
@@ -56,9 +86,15 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            double r = Math.Sqrt((circleS / Math.PI));
+            double d = r * 2;
+            double a = Math.Sqrt(squareS);
+            if (a >= d)
+            {
+                answer = true;
+            }
+                
+            
 
             return answer;
         }

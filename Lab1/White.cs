@@ -6,9 +6,7 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = d > 0;
 
             return answer;
         }
@@ -16,9 +14,7 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = n % 2 == 0;
 
             return answer;
         }
@@ -26,9 +22,14 @@ namespace Lab1
         {
             int answer = 0;
 
-            // code here
-
-            // end
+            if (a > b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
 
             return answer;
         }
@@ -36,9 +37,14 @@ namespace Lab1
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (Math.Abs(d) > Math.Abs(f))
+            {
+                answer = f;
+            }
+            else
+            {
+                answer = d;
+            }
 
             return answer;
         }
@@ -46,10 +52,16 @@ namespace Lab1
         {
             double answer = 0;
 
-            // code here
+            if (Math.Abs(x) > 1)
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = x;
+            }
 
-            // end
-
+            
             return answer;
         }
         public bool Task6(double x, double y, double r)
