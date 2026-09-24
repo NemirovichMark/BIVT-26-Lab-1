@@ -7,6 +7,10 @@
             bool answer = false;
 
             // code here
+            if (Math.Abs(d)>=1)
+                answer = true;
+            else
+                answer = false;
 
             // end
 
@@ -17,6 +21,10 @@
             bool answer = false;
 
             // code here
+            if ((f+d)/2>0)
+                answer = true;
+            else
+                answer = false;
 
             // end
 
@@ -27,6 +35,11 @@
             bool answer = false;
 
             // code here
+            if ((a+b)>((Math.Abs(a) + Math.Abs(b)) / 2))
+                answer = true;
+            else
+                answer = false;
+            
 
             // end
 
@@ -37,6 +50,12 @@
             int answer = 0;
 
             // code here
+            if (a >= b && a >= c)
+                answer = a;
+            else if (b >= a && b >= c)
+                answer = b;
+            else
+                answer = c;
 
             // end
 
@@ -47,6 +66,10 @@
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+                answer = 0;
+            if (Math.Abs(x) <= 1)
+                answer = x * x - 1;
 
             // end
 
@@ -57,6 +80,11 @@
             bool answer = false;
 
             // code here
+            if (y >= 0 && y <= 1 - Math.Abs(x))
+                answer = true;
+            else
+                answer = false;
+
 
             // end
 
@@ -68,6 +96,12 @@
             bool answer = true;
 
             // code here
+            if (n < 0)
+                answer = false;
+            else if (n % 2 == 0)
+                answer = false;
+            else
+                answer = true;
 
             // end
 
@@ -78,6 +112,10 @@
             bool answer = false;
 
             // code here
+            if (X >= 7 && ((X+1)/2)*Y >= 240 && ((X + 1) / 2 )* Y <= 360)
+                answer = true;
+            else
+                answer = false;
 
             // end
 
