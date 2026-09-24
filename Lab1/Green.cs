@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if (Math.Abs(d) >= 1)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,10 @@
             bool answer = false;
 
             // code here
-
+            if ((d + f / 2.0) > 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +33,12 @@
             bool answer = false;
 
             // code here
-
+            int sum = a+ b;
+            double sr = (Math.Abs(a) + Math.Abs(b)) / 2.0;
+            if (sum>sr)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -37,7 +48,8 @@
             int answer = 0;
 
             // code here
-
+            int ch = Math.Max(a, b);
+            answer = Math.Max(ch, c);
             // end
 
             return answer;
@@ -47,17 +59,23 @@
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else
+                answer = x * x - 1;
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task6(double x, double y)
         {
             bool answer = false;
 
             // code here
-
+            if (y <= 1 - Math.Abs(x) && y>=0)
+                answer = true;
             // end
 
             return answer;
@@ -68,7 +86,17 @@
             bool answer = true;
 
             // code here
-
+            if (n<0)
+            {
+                answer=false;
+            }
+            else
+            {
+                if (n%2==0)
+                {
+                    answer = false;
+                }
+            }
             // end
 
             return answer;
@@ -78,7 +106,14 @@
             bool answer = false;
 
             // code here
-
+            if (X>=7)
+            {
+                int sp = ((X+1)/2)*Y;
+                if (28*60-sp<=24*60 && 28*60-sp>=22*60)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
