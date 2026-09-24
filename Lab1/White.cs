@@ -7,7 +7,8 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (d > 0)
+            answer= true;
             // end
 
             return answer;
@@ -17,6 +18,8 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if (n % 2 == 0)
+                answer = true;
 
             // end
 
@@ -27,7 +30,10 @@ namespace Lab1
             int answer = 0;
 
             // code here
-
+            if (a > b)
+                answer = a;
+            else
+                answer = b;
             // end
 
             return answer;
@@ -37,6 +43,10 @@ namespace Lab1
             double answer = 0;
 
             // code here
+            if (Math.Abs(d)<=Math.Abs(f))
+                answer = d;
+            else
+                answer = f;
 
             // end
 
@@ -47,7 +57,10 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) > 1)
+                answer = 1;
+            else
+                answer = x;
             // end
 
             return answer;
@@ -57,7 +70,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            double a;
+            a = (Math.Pow(x, 2) + Math.Pow(y, 2) - Math.Pow(r, 2));
+            if (Math.Abs(a) <= Math.Pow(10, -4))
+                answer = true;
             // end
 
             return answer;
@@ -68,9 +84,17 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            int s = n * n;
+            if (s - n > 2 * n)
+            {
+                if (n%2==0)
+                {
+                    answer = true;
+                }
+            }
 
             // end
-
+         
             return answer;
         }
         public bool Task8(double L, int T, int M)
@@ -78,7 +102,9 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (M%2==0)
+                if ((M+T>=5) && L<=30)
+                    answer=true;
             // end
 
             return answer;
