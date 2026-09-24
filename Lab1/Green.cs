@@ -59,17 +59,23 @@ namespace Lab1
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else
+                answer = x * x - 1;
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task6(double x, double y)
         {
             bool answer = false;
 
             // code here
-
+            if (y <= 1 - Math.Abs(x) && y>=0)
+                answer = true;
             // end
 
             return answer;
