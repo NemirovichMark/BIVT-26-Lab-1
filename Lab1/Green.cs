@@ -7,7 +7,6 @@
             bool answer = false;
 
             // code here
-            answer = Math.Abs(d) >= 1;
 
             // end
 
@@ -18,7 +17,6 @@
             bool answer = false;
 
             // code here
-            answer = (d + f) / 2 > 0;
 
             // end
 
@@ -29,7 +27,6 @@
             bool answer = false;
 
             // code here
-            answer = a + b > (Math.Abs(a) + Math.Abs(b)) / 2;
 
             // end
 
@@ -40,13 +37,6 @@
             int answer = 0;
 
             // code here
-            answer = a;
-
-            if (b > answer)
-                answer = b;
-
-            if (c > answer)
-                answer = c;
 
             // end
 
@@ -57,10 +47,6 @@
             double answer = 0;
 
             // code here
-            if (Math.Abs(x) <= 1)
-                answer = x * x - 1;
-            else
-                answer = 0;
 
             // end
 
@@ -71,8 +57,6 @@
             bool answer = false;
 
             // code here
-            if (y >= 0 && y <= 1 - Math.Abs(x))
-                answer = true;
 
             // end
 
@@ -84,8 +68,6 @@
             bool answer = true;
 
             // code here
-            if (n < 0 || n % 2 == 0)
-                answer = false;
 
             // end
 
@@ -96,10 +78,6 @@
             bool answer = false;
 
             // code here
-            int c = (X + 1) / 2;
-
-            if (X >= 7 && c * Y >= 240 && c * Y <= 360)
-                answer = true;
 
             // end
 
