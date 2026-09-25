@@ -6,7 +6,6 @@ namespace Lab1
         {
             bool answer = false;
 
-            bool answer = true;
 
             // end
 
