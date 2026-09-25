@@ -18,8 +18,18 @@ namespace Lab1
         {
             bool answer = false;
 
+            if ((b != 0) && (a % b == 0))
+            {
+                answer = true;
+            }
+            else
+            {
+                if ((a != 0) && (b % a == 0))
+                {
+                    answer = true;
+                }
 
-
+            }
             return answer;
         }
         public bool Task3(int a, int b)
