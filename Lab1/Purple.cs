@@ -6,7 +6,7 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
+            // code her
 
             // end
 
