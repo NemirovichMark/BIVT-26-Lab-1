@@ -8,7 +8,9 @@
 
             // code here
             if ((a > 0 && b > 0) || (a < 0 && b < 0))
+            {
                 answer = true;
+            }
             // end
 
             return answer;
