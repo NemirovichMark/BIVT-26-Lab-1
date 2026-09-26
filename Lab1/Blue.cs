@@ -50,11 +50,11 @@
             double absd = Math.Abs(d);
             double absf = Math.Abs(f);
             double absg = Math.Abs(g);
-            if (absd > absf && absf >= absg)
+            if (absd >= absf && absd >= absg)
             {
                 answer = d;
             }
-            else if (absf > absd && absd >= absg)
+            else if (absf >= absd && absf >= absg)
             {
                 answer = f;
             }
@@ -132,8 +132,9 @@
             int goldA = a / 2;
             int goldB = b / 2;
             int goldC = c / 2;
+            
             bool option1 = (goldA == goldB && goldB == goldC);
-            bool option2 = (goldA == goldB && goldB == (goldC + 1));
+            bool option2 = (goldA == goldB && goldA == (goldC + 1));
             
             if ((option1 || option2) && goldA >= 1 && goldB >= 1 && goldC >= 1)
             {
