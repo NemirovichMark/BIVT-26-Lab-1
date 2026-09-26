@@ -53,7 +53,12 @@
             double answer = 0;
 
             // code here
-            answer = Math.Max(Math.Max(Math.Abs(d), Math.Abs(f)), Math.Max(Math.Abs(d), Math.Abs(g)));
+            if (Math.Abs(d) == Math.Max(Math.Max(Math.Abs(d), Math.Abs(f)), Math.Max(Math.Abs(d), Math.Abs(g))))
+                answer = d;
+            else if (Math.Abs(f) == Math.Max(Math.Max(Math.Abs(d), Math.Abs(f)), Math.Max(Math.Abs(d), Math.Abs(g))))
+                answer = f;
+            else if (Math.Abs(g) == Math.Max(Math.Max(Math.Abs(d), Math.Abs(f)), Math.Max(Math.Abs(d), Math.Abs(g))))
+                answer = g;
             // end
 
             return answer;
@@ -126,25 +131,20 @@
             int s = a1 + b1 + c1;
             int s1 = s / 3;
             int s2 = (s + 1) / 3;
-            if ((a1 > 0 && b1 > 0 && c1 > 0) && (a >= s1 && b >= s1 && c >= s1))
+
+            if (s % 3 == 0 && s1 >= 1 && a >= s1 && b >= s1 && c >= s1)
             {
-                if (s % 3 == 0)
-                    answer = true;
-
-                else if (s % 3 == 2)
-                {
-                    if (a >= s2 && b >= s2 && c >= s2)
-                    {
-                        s = s + 1;
-                        answer = true;
-                    }
-                    else
-                        answer = false;
-                }
+                answer = true;
             }
-            else 
+            else if (s % 3 == 2 && s2 >= 1 && a >= s2 && b >= s2 && c >= s2)
+            {
+                s = s + 1;
+                answer = true;
+            }
+            else
+            {
                 answer = false;
-
+            }
             // end
 
             return answer;
