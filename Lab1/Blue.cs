@@ -1,4 +1,4 @@
-﻿namespace Lab1
+﻿﻿namespace Lab1
 {
     public class Blue
     {
@@ -78,7 +78,9 @@
             else if (x > -1 && x <= 0)
             {
                 answer = x + 1;
-            else
+            }
+            else if (x>0)
+            {
                 answer = 1;
             }
             // end
@@ -127,12 +129,14 @@
             bool answer = false;
 
             // code here
-            int s = (a / 2 + b / 2 + c / 2);
-            if (s % 3 == 0 && s / 3 >= 1 && s / 3 <= a && s / 3 <= b && s / 3 <= c)
-            {
-                answer = true;
-            }
-            else if ((s + 1) % 3 == 0 && (s + 1) / 3 >= 1 && s / 3 <= a && s / 3 <= b && s / 3 <= c)
+            int goldA = a / 2;
+            int goldB = b / 2;
+            int goldC = c / 2;
+            
+            bool option1 = (goldA == goldB && goldB == goldC);
+            bool option2 = (goldA == goldB && goldA == (goldC + 1));
+            
+            if ((option1 || option2) && goldA >= 1 && goldB >= 1 && goldC >= 1)
             {
                 answer = true;
             }
