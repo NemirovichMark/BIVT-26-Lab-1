@@ -98,9 +98,7 @@
             {
             answer = false;
             }
-            else
-            {
-            if (n % 2 == 0)
+            else if (n % 2 == 0)
             {
             answer = false;
             }
