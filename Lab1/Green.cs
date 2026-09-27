@@ -111,7 +111,7 @@
             // code here
             int t = (X + 1) / 2;
             int s = t * Y;
-            if (X==7 && s >= 240 && s <= 360)
+            if (X>=7 && s >= 240 && s <= 360)
             {
                 answer = true;
             }
