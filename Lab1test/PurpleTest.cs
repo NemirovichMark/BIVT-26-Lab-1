@@ -8,7 +8,7 @@ namespace Lab1_test
         [TestMethod]
         public void Test1()
         {
-            // Arrange
+            // Arrange 
             var input = new int[] { 0, 5, 2, 3, -2, 11, 22, -31, -418, -1 };
             var answer = new bool[] { false, true, false, false, false, false, false, true, false, false };
             var test = new bool[answer.Length];
