@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -7,6 +7,10 @@
             bool answer = false;
 
             // code here
+            if  (Math.Abs(d) >= 1)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -17,6 +21,10 @@
             bool answer = false;
 
             // code here
+            if (((d+f) / 2) >0) 
+            { 
+                answer = true;
+            }
 
             // end
 
@@ -27,6 +35,10 @@
             bool answer = false;
 
             // code here
+            if ((a+b)>((Math.Abs(a) +Math.Abs(b)) / 2.0)) 
+            { 
+                answer = true;
+            }
 
             // end
 
@@ -37,6 +49,13 @@
             int answer = 0;
 
             // code here
+            int first = Math.Max(a, b);
+            int second = Math.Max(b, c);
+            
+            answer = Math.Max(first, second);
+            
+
+
 
             // end
 
@@ -47,6 +66,15 @@
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) <= 1) 
+            { 
+                answer = x * x - 1; 
+            }
+            else
+            { 
+                answer = 0;
+            }
+
 
             // end
 
@@ -57,7 +85,20 @@
             bool answer = false;
 
             // code here
+            double Limit;
+            if (x < 0)
+            {
+                Limit = 1 + x;
+            }
+            else
+            {
+                Limit = 1 - x;
+            }
 
+            if (y >= 0 && y <= Limit)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,6 +109,14 @@
             bool answer = true;
 
             // code here
+            if (n  <0) 
+            { 
+                answer = false; 
+            }
+            else if (n%2 == 0 ) 
+                {
+                    answer = false; 
+                }
 
             // end
 
@@ -78,10 +127,17 @@
             bool answer = false;
 
             // code here
-
+            int teaCount = (X + 1) / 2;
+            int shift = teaCount * Y;
+            if (X>=7 && shift >= 240 && shift <= 360) 
+            {
+                answer = true;
+            }
             // end
 
             return answer;
         }
     }
 }
+
+
