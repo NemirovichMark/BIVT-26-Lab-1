@@ -33,7 +33,7 @@
         }
         public int Task4(int a, int b, int c)
         {
-            int answer = 0;
+            int answer = a;
 
             // code here
             if (b > answer) answer = b;
@@ -99,12 +99,8 @@
             bool answer = false;
 
             // code here
-            int chay = X / 2; 
-            int shift = (X * Y) + (Y * chay); 
-            if (shift >= 420)
-
-                answer = true; 
-
+            int sleep = 180 + ((X + 1) / 2) * Y;
+            answer = X >= 7 && sleep >= 420 && sleep <= 540;
             // end
 
             return answer;
