@@ -8,7 +8,7 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
+            
 
             if (Math.Abs(d) >= 1.0)
             {
@@ -19,7 +19,7 @@ namespace Lab1
                 answer = false;
             }
                     
-            // end
+            
 
             return answer;
         }
@@ -27,13 +27,13 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
+           
             double sr = (d + f) / 2;
             if (sr>0) {
                 answer = true;
             }
             else { answer = false; }
-                // end
+              
 
                 return answer;
         }
@@ -41,14 +41,14 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
+            
             int a1 = Math.Abs(a);
             int b1 = Math.Abs(b);
             int summ = a + b;
             int summ1 = (a1 + b1)/2;
             if (summ > summ1) { answer = true; }
             else { answer = false; }
-                // end
+                
 
                 return answer;
         }
@@ -105,9 +105,15 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            
+            if (X < 7) return false;
+            int teaCount = 4;
+            int shift = teaCount * Y;
+            int initialSleep = 4 * 60 + 1440; 
+            int finalSleep = initialSleep - shift;
+            int minSleep = 22 * 60; 
+            int maxSleep = 24 * 60;
+            answer = finalSleep >= minSleep && finalSleep <= maxSleep;
 
             return answer;
         }
