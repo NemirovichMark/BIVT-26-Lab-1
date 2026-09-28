@@ -151,13 +151,26 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            double a1 = (a / 2);
-            double b1 = (b / 2);
-            double c1 = (c / 2);
-            double a2 = Math.Floor(a1/2);
-            double b2 = Math.Floor(b1);
-            double c2 = Math.Floor(c1);
-
+            int a1 = a / 2;
+            int b1 = b / 2;
+            int c1 = c / 2;
+            int res = a1 + b1 + c1;
+            if (res < 2)
+            {
+                answer = false;
+            }
+            else if (res / 3 > a || res / 3 > c || res / 3 > b)
+            {
+                answer = false;
+            }
+            else if (res % 3 == 0)
+            {
+                answer = true;
+            }
+            else if ((res + 1) % 3 == 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
