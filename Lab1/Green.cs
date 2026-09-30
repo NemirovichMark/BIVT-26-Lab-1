@@ -1,14 +1,12 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
         public bool Task1(double d)
         {
             bool answer = false;
-
-            // code here
-
-            // end
+            double ab = Math.Abs(d);
+            answer = (ab >= 1);
 
             return answer;
         }
@@ -16,9 +14,11 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            double su;
+            su = d + f;
+            double sr;
+            sr = su / 2;
+            answer = (sr > 0);
 
             return answer;
         }
@@ -26,9 +26,10 @@
         {
             bool answer = false;
 
-            // code here
+            double summ = a + b;
+            double sr = (Math.Abs(a) + Math.Abs(b)) / 2;
 
-            // end
+            answer = (summ > sr);
 
             return answer;
         }
@@ -36,9 +37,14 @@
         {
             int answer = 0;
 
-            // code here
+            if (a > b && a > c)
+            { answer = a; }
 
-            // end
+            else if (b > a && b > c)
+            { answer = b; }
+
+            else
+            { answer = c; }
 
             return answer;
         }
@@ -46,19 +52,25 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (Math.Abs(x) > 1)
+                { answer = 0; }
+            else
+            { answer = x * x - 1; }
 
             return answer;
         }
         public bool Task6(double x, double y)
         {
             bool answer = false;
+            double yy = 0;
 
-            // code here
+            if (x < 0)
+            { yy = 1 + x; }
+            else
+            { yy = 1 - x; }
 
-            // end
+            if (y >= 0 && y <= yy)
+                answer = true;
 
             return answer;
         }
@@ -67,9 +79,12 @@
         {
             bool answer = true;
 
-            // code here
-
-            // end
+            if (n < 0)
+            { answer = false; }
+            else
+            { if (n % 2 == 0) 
+                answer = false;
+            }
 
             return answer;
         }
@@ -77,9 +92,18 @@
         {
             bool answer = false;
 
-            // code here
+            bool wake = false;
+            bool rip = false;
 
-            // end
+
+            if (14 - X <= 7)
+            { wake = true; }
+
+            if ((4 * 60 - (X + 1) / 2 * Y <= 0) && (4 * 60 - (X + 1) / 2 * Y >= -2 * 60))
+            { rip = true; }
+
+            if (wake == true && rip == true)
+            { answer = true; }
 
             return answer;
         }
