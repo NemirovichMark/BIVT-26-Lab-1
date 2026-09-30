@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -6,9 +6,7 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = Math.Abs(d) >= 1;
 
             return answer;
         }
@@ -16,19 +14,21 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
-
+            if((d + f) / 2 > 0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             return answer;
         }
         public bool Task3(int a, int b)
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = (a + b) > (Math.Abs(a) + Math.Abs(b)) / 2;
 
             return answer;
         }
@@ -36,9 +36,9 @@
         {
             int answer = 0;
 
-            // code here
-
-            // end
+            answer = a;
+            if (b > answer) answer = b;
+            if (c > answer) answer = c;
 
             return answer;
         }
@@ -46,9 +46,14 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else 
+            {
+                answer = x * x - 1;
+            }
 
             return answer;
         }
@@ -56,9 +61,10 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (y >= 0 && y <= 1 - Math.Abs(x))
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -67,20 +73,26 @@
         {
             bool answer = true;
 
-            // code here
-
-            // end
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                if (n % 2 == 0)
+                {
+                    answer = false;
+                }
+            }
 
             return answer;
+
         }
         public bool Task8(int X, int Y)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
+            bool answer = false;   
+            int sleep = 180 + ((X + 1) / 2) * Y;
+            answer = (X >= 7) && (sleep <= 540) && (sleep >= 420);
             return answer;
         }
     }
