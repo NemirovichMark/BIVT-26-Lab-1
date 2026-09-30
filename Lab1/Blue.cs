@@ -7,7 +7,8 @@
             bool answer = false;
 
             // code here
-
+            if ((a != 0 && b != 0) && ((a > 0 && b > 0) || (a < 0 && b < 0)))
+                answer = true;
             // end
 
             return answer;
@@ -17,7 +18,10 @@
             bool answer = false;
 
             // code here
-
+            int d1 = (int)d;
+            double d2 = d1;
+            if (Math.Abs(d - d2) >= 0.0001)
+                    answer = true;
             // end
 
             return answer;
@@ -27,7 +31,8 @@
             bool answer = false;
 
             // code here
-
+            if (b!= 0 && a % b == 0)
+                answer = true;
             // end
 
             return answer;
@@ -37,7 +42,14 @@
             double answer = 0;
 
             // code here
-
+            double m = Math.Max(Math.Abs(d), Math.Abs(f));
+            m = Math.Max(m, Math.Abs(g));
+            if (Math.Abs(f) == m)
+                answer = f;
+            else if (Math.Abs(g) == m)
+                answer = g;
+            else
+                answer = d;
             // end
 
             return answer;
@@ -47,7 +59,14 @@
             double answer = 0;
 
             // code here
-
+            double y = 0;
+            if (x <= -1)
+                y = 0;
+            else if (x <= 0 && x > -1)
+                y = x + 1;
+            else if (x > 0)
+                y = 1;
+            answer = y;
             // end
 
             return answer;
@@ -57,7 +76,10 @@
             bool answer = false;
 
             // code here
-
+            double Rcir = Math.Sqrt(circleS / Math.PI);
+            double rvpis = Math.Sqrt(squareS)/2;
+            if (Rcir <= rvpis)
+                answer = true;
             // end
 
             return answer;
@@ -68,7 +90,14 @@
             int answer = 0;
 
             // code here
-
+            if (Math.Abs(d) < Math.Abs(f))
+                if (d > 0)
+                    answer = -1;
+                else
+                    answer = answer;
+            else
+                if (f > 0)
+                    answer = 1;
             // end
 
             return answer;
@@ -78,7 +107,12 @@
             bool answer = false;
 
             // code here
-            
+            a = a / 2;
+            b /= 2;
+            c /= 2;
+            int s = a + b + c;
+            if ((s % 3 == 0 && s>=3) || (s + 1) % 3 == 0)
+                answer = true;
             // end
 
             return answer;
