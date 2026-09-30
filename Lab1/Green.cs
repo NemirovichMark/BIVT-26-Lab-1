@@ -7,7 +7,7 @@
             bool answer = false;
 
             // code here
-
+            answer = Math.Abs(d) >= 1;
             // end
 
             return answer;
@@ -17,7 +17,7 @@
             bool answer = false;
 
             // code here
-
+            answer = (d + f) / 2 > 0;
             // end
 
             return answer;
@@ -25,18 +25,19 @@
         public bool Task3(int a, int b)
         {
             bool answer = false;
-
             // code here
-
+            answer = (a + b) > (Math.Abs(a) + Math.Abs(b)) / 2;
             // end
 
             return answer;
         }
         public int Task4(int a, int b, int c)
         {
-            int answer = 0;
+            int answer = a;
 
             // code here
+            if (b > answer) answer = b;
+            if (c > answer) answer = c;
 
             // end
 
@@ -47,6 +48,14 @@
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else
+            {
+                answer = x * x - 1;
+            }
 
             // end
 
@@ -57,6 +66,10 @@
             bool answer = false;
 
             // code here
+            if (y >= 0 && y <= 1 - Math.Abs(x))
+            
+                answer = true;
+            
 
             // end
 
@@ -68,6 +81,14 @@
             bool answer = true;
 
             // code here
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else if (n % 2 == 0)
+            {
+                answer = false;
+            }
 
             // end
 
@@ -78,7 +99,8 @@
             bool answer = false;
 
             // code here
-
+            int sleep = 180 + ((X + 1) / 2) * Y;
+            answer = X >= 7 && sleep >= 420 && sleep <= 540;
             // end
 
             return answer;
