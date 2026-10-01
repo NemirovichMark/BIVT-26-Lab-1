@@ -1,5 +1,3 @@
-using System.Security.Cryptography;
-
 namespace Lab1
 {
     public class Green
@@ -9,7 +7,9 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (Math.Abs(d) >= 1) { answer = true; }
+            if (Math.Abs(d) >= 1) {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -19,7 +19,9 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if ((d + f) >= 0) { answer = true; }
+            if ((d + f) >= 0) {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -31,7 +33,9 @@ namespace Lab1
             // code here
             int num1 = a + b;
             int num2 = Math.Abs(a) + Math.Abs(b) / 2;
-            if (num1 > num2) { answer = true; }
+            if (num1 > num2) {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -54,11 +58,15 @@ namespace Lab1
 
             // code here
             double a = x * x;
-            if (Math.Abs(x) <= 1) { answer = a - 1; }
-            else { answer = 0; }
-                // end
+            if (Math.Abs(x) <= 1) {
+                answer = a - 1;
+            }
+            else {
+                answer = 0;
+            }
+            // end
 
-                return answer;
+            return answer;
         }
         public bool Task6(double x, double y)
         {
@@ -70,13 +78,10 @@ namespace Lab1
             if (x == 0 && y == 1) { answer = true; }
             double y1 = 0;
             if (x >= 0) { y1 = 1 - x; }
-            else {  y1 = 1 + x; }
+            else { y1 = 1 + x; }
+            // end
 
-            // add if()
-
-                // end
-
-                return answer;
+            return answer;
         }
 
         public bool Task7(int n)
@@ -84,14 +89,18 @@ namespace Lab1
             bool answer = true;
 
             // code here
-            if (n<0 ) { answer = false; }
+            if (n < 0) {
+                answer = false;
+            }
             else
             {
-                if (n%2==0) { answer = false; }
+                if (n % 2 == 0) {
+                    answer = false;
+                }
             }
-                // end
+            // end
 
-                return answer;
+            return answer;
         }
         public bool Task8(int X, int Y)
         {
@@ -104,22 +113,34 @@ namespace Lab1
             bool a = true;
             h1 -= Y;
 
-            while (X != 0) {
-                if (c == true) { h1 -= Y; }
-                if (c == false) { c = true; }
-                else { c = false; }
-                if (660 > (h2 - h1) && (h2-h1) > 540) { a = false; }
-                if (a == true) { h2 -= 60; }
+            while (X != 0)
+            {
+                if (c == true) {
+                    h1 -= Y;
+                }
+                if (c == false) {
+                    c = true;
+                }
+                else {
+                    c = false;
+                }
+                if (660 > (h2 - h1) && (h2 - h1) > 540) {
+                    a = false;
+                }
+                if (a == true) {
+                    h2 -= 60;
+                }
                 X -= 1;
             }
-            if (660 > (h2 - h1) && (h2 - h1) > 540 && h2 == 420) { answer = true; }
-            else { answer = false; }
+            if (660 > (h2 - h1) && (h2 - h1) > 540 && h2 == 420) {
+                answer = true;
+            }
+            else {
+                answer = false;
+            }
+            // end
 
-            // arrays?
-
-                // end
-
-                return answer;
+            return answer;
         }
     }
 }
