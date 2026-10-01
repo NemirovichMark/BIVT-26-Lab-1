@@ -36,7 +36,7 @@ namespace Lab1
             {
                 answer = a;
             }
-            else (a < b)
+            else if (a < b)
             {
                 answer = b;
             }
