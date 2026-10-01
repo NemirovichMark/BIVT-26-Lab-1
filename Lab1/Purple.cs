@@ -127,9 +127,9 @@ namespace Lab1
             if ((bank - (pupils * 5) - (avrs * salary) >= 0) && (leap == false))
                 answer = true;
 
-                // end
+            // end
 
-                return answer;
+            return answer;
         }
     }
 }
