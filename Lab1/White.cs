@@ -7,7 +7,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            answer = d>0
+            answer = d>0;
  
             // end
 
@@ -38,7 +38,7 @@ namespace Lab1
             }
             else (a < b)
             {
-                answer = b
+                answer = b;
             }
     
 
