@@ -1,4 +1,4 @@
-﻿using System.Collections.Concurrent;
+﻿\using System.Collections.Concurrent;
 using System.IO.Compression;
 
 namespace Lab1
@@ -10,8 +10,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            double result = Math.Exp(d);
-            if (Math.Abs(result) >= 1)
+            if (Math.Abs(d) >= 1)
             {
                 answer = true;
             }
@@ -38,13 +37,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            double abs_a = Math.Abs(a);
-            double abs_b = Math.Abs(b);
+            double average = (Math.Abs(a) + Math.Abs(b)) / 2.0;
+            int sum = a + b;
 
-            double res = (abs_a + abs_b) / 2.0;
-            double sum = (abs_a + abs_b);
-
-            if (sum > res)
+            if (sum > average)
             {
                 answer = true;
             }
@@ -58,7 +54,7 @@ namespace Lab1
 
             // code here
             answer = Math.Max(Math.Max(a, b), c);
-        
+
             // end
 
             return answer;
@@ -68,7 +64,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            
+
             double modx = Math.Abs(x);
 
             if (modx > 1)
@@ -98,7 +94,7 @@ namespace Lab1
             {
                 border = 1 - x;
             }
-            
+
             if (y >= 0 && y <= border)
             {
                 answer = true;
@@ -132,8 +128,27 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-            
+            int wake = 14 * 60;
+            int sleep = 4 * 60;
+
+            for (int day = 1; day <= X; day++)
+            {
+                if (wake > 7 * 60)
+                {
+                    wake = wake - 60;
+                }
+                if (day % 2 == 1)
+                {
+                    sleep = sleep - Y;
+                }
+            }
+
+            int sleepTime = wake - sleep;
+
+            if (wake == 7 * 60 && sleepTime >= 7 * 60 && sleepTime <= 9 * 60)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
