@@ -100,15 +100,13 @@
             bool answer = false;
 
             // code here
-            string ans1 = "inside";
-            string ans2 = "outside";
-            if ((y == 0 && x >= 1 && x <= 1) || (y > 0 && y <= 1 + x && y <= 1 - x))
+            if ((y >= 0 && y<= 1 + x && y <= 1 - x))
             {
-                answer = true;
+                return true;
             }
             else
             {
-                answer = false;
+                return false;
             }
             // end
 
