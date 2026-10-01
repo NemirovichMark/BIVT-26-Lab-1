@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Blue
     {
@@ -7,7 +7,14 @@
             bool answer = false;
 
             // code here
-
+            if (a*b>0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer=false;
+            }
             // end
 
             return answer;
@@ -17,7 +24,11 @@
             bool answer = false;
 
             // code here
-
+            
+            if (((Math.Abs(d)-(Math.Abs(d)-Math.Abs(d)%1)))>=0.00001) answer = true;
+            else answer = false;
+            
+            
             // end
 
             return answer;
@@ -27,7 +38,8 @@
             bool answer = false;
 
             // code here
-
+            if (b!=0 && a%b==0){answer=true;}
+            else{answer=false;}
             // end
 
             return answer;
@@ -37,6 +49,16 @@
             double answer = 0;
 
             // code here
+            double maxi = Math.Max(Math.Abs(d), Math.Max(Math.Abs(f), Math.Abs(g)));
+            if (Math.Abs(d) == maxi)
+            {
+                answer = d;
+            }
+            else if (Math.Abs(f) == maxi)
+            {
+                answer = f;
+            }
+            else answer = g;
 
             // end
 
@@ -47,7 +69,9 @@
             double answer = 0;
 
             // code here
-
+            if (x <= -1) answer = 0;
+            else if (x>-1 && x <= 0) answer = x + 1;
+            else answer = 1;
             // end
 
             return answer;
@@ -57,6 +81,13 @@
             bool answer = false;
 
             // code here
+            double side =Math.Sqrt(squareS);
+            double radius = Math.Sqrt((circleS / Math.PI));
+            if (side >= 2 * radius)
+            {
+                answer = true;
+            }
+            else answer = false;
 
             // end
 
@@ -68,8 +99,21 @@
             int answer = 0;
 
             // code here
-
-            // end
+           if (Math.Abs(d) < Math.Abs(f))
+           {
+               if (d > 0)
+               {
+                   answer = -1;
+               }
+           }
+           else
+           {
+               if (f > 0)
+               {
+                   answer = 1;
+               }
+           }
+           // end
 
             return answer;
         }
@@ -78,7 +122,20 @@
             bool answer = false;
 
             // code here
-            
+            int n = 0; 
+            int summa = a /2 + b/2 + c/2;
+            if (summa % 3 == 0)
+            {
+                n = summa / 3;
+            }
+            else if ((summa + 1) % 3 == 0)
+            {
+                n = (summa+1) / 3;
+            }
+            else answer = false;
+            if (n>=1 && n <= (Math.Min(a, Math.Min(b, c)))) answer = true;
+            else answer = false;
+                
             // end
 
             return answer;
