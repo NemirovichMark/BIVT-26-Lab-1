@@ -8,8 +8,6 @@ namespace Lab1
 
             // code here
 
-            bool = true;
-
             // end
 
             return answer;
