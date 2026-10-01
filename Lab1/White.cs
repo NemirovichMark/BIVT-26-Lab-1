@@ -51,7 +51,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            answer = (Math.Ads(d) < Math.Ads(f)) ? d : f;
+            answer = (Math.Abs(d) < Math.Abs(f)) ? d : f;
 
             // end
 
@@ -62,7 +62,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            answer =  (Mach.Ads(x) > 1) ? 1 : x;
+            answer =  (Mach.Abs(x) > 1) ? 1 : x;
             
                 
             
@@ -76,7 +76,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            answer = Math.Ads(x * x * y * y - r * r) <= 1e-4;
+            answer = Math.Abs(x * x * y * y - r * r) <= 1e-4;
 
             // end
 
