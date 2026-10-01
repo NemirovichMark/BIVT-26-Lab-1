@@ -62,7 +62,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            answer =  (Mach.Abs(x) > 1) ? 1 : x;
+            answer =  (Math.Abs(x) > 1) ? 1 : x;
             
                 
             
