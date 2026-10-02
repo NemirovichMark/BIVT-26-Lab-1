@@ -4,13 +4,18 @@
     {
         public static void Main()
         {
-            //White white = new White();
-            //Console.WriteLine(white.Task1(1.2));
-            //Console.WriteLine(white.Task2(2));
-            //Console.WriteLine(white.Task3(2.5, 1.89));
-            //Console.WriteLine(white.Task4(-2.5, 1.89));
-            //Console.WriteLine(white.Task5(0.5));
-            //Console.WriteLine(white.Task6(2.5, 1.89, 3));
+            Blue blue = new Blue();
+            Console.WriteLine(blue.Task1(0,0));
+            // Console.WriteLine("fdf");
+            Console.WriteLine(blue.Task2(2.111));
+            Console.WriteLine(blue.Task3(4, 3));
+            Console.WriteLine(blue.Task4(-2.5, 1.89, -10.2));
+            Console.WriteLine(blue.Task5(-0.5));
+            Console.WriteLine(blue.Task6(1, 3.1));
+            Console.WriteLine(blue.Task7(-10.1, 2.5));
+            Console.WriteLine(blue.Task8(1,3,4));
+
+
         }
     }
 }
