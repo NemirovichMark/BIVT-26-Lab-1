@@ -20,22 +20,17 @@ if (d > 0)
         {
             bool answer = false;
 
-            // code here
+           
              if (n % 2 == 0)
         {
-            answer = true;
+                 answer = true;
         }
-
-            // end
-
-            return answer;
+              return answer;
         }
         public int Task3(int a, int b)
         {
             int answer = 0;
-
-            // code here
- if (a > b)
+             if (a > b)
         {
             answer = a;
         }
@@ -43,7 +38,6 @@ if (d > 0)
         {
             answer = b;
         }
-            // end
 
             return answer;
         }
@@ -51,18 +45,14 @@ if (d > 0)
         {
             double answer = 0;
 
-            // code here
-            if (Math.Abs(d) <= Math.Abs(f))
+            if (Math.Abs(d) < Math.Abs(f))
         {
-            answer = d;
+                 answer = d;
         }
-        else
+            else
         {
-            answer = f;
+                 answer = f;
         }
-
-
-            // end
 
             return answer;
         }
@@ -70,16 +60,14 @@ if (d > 0)
         {
             double answer = 0;
 
-            // code here
-if (Math.Abs(x) > 1)
+            if (Math.Abs(x) > 1)
         {
-            answer = 1;
+                answer = 1;
         }
         else
         {
-            answer = x;
+                answer = x;
         }
-            // end
 
             return answer;
         }
@@ -87,16 +75,10 @@ if (Math.Abs(x) > 1)
         {
             bool answer = false;
 
-            // code here
- if (Math.Abs(x * x + y * y - r * r) <= 1e-4)
+             if (Math.Abs(x * x + y * y - r * r) <= 1e-4)
         {
-            answer = true;
+                answer = true;
         }
-        else
-        {
-            answer = false;
-        }
-            // end
 
             return answer;
         }
@@ -105,28 +87,26 @@ if (Math.Abs(x) > 1)
         {
             bool answer = false;
 
-            // code here
             int s = n * n;
             
-if (s - n > 2 * n && n % 2== 0)
+            if (s - n > 2 * n ) 
+                if (n % 2 == 0 )
             {
-                answer = true;
+                    answer = true;
             }
         
-
-        return answer;
+            return answer;
     }
-            // end
-
-        
+      
         public bool Task8(double L, int T, int M)
         {
             bool answer = false;
 
-            // code here
-if (L <= 30 && (T + M) >= 5 && M % 2 == 0)
+            if (L <= 30 )
+                if (T + M >= 5 )
+                    if (M % 2 == 0)
         {
-            answer = true;
+                        answer = true;
         }
 
         return answer;
