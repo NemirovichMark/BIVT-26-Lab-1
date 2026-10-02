@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -6,9 +6,11 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            double a = Math.Abs(d);
+            if (a >= 1)
+                answer = true;
+            else
+                answer = false;
 
             return answer;
         }
@@ -16,9 +18,12 @@
         {
             bool answer = false;
 
-            // code here
+            double summ = (d + f) / 2.0;
 
-            // end
+            if (summ > 0)
+                answer = true;
+            else
+                answer = false;
 
             return answer;
         }
@@ -26,19 +31,26 @@
         {
             bool answer = false;
 
-            // code here
+            double summ1 = a + b;
 
-            // end
+            double sredn = ((Math.Abs(a) + Math.Abs(b)) / 2.0);
+            if (summ1 > sredn)
+                answer = true;
+            else
+                answer = false;
 
-            return answer;
+                return answer;
         }
         public int Task4(int a, int b, int c)
         {
             int answer = 0;
 
-            // code here
-
-            // end
+            if (a > b && a > c)
+                answer = a;
+            else if (b > a && b > c)
+                answer = b;
+            else
+                answer = c;
 
             return answer;
         }
@@ -46,9 +58,11 @@
         {
             double answer = 0;
 
-            // code here
+            if (Math.Abs(x) > 1)
+                answer = 0;
 
-            // end
+            else
+                answer = (x * x) - 1;
 
             return answer;
         }
@@ -56,9 +70,25 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (y >= 0)
+            {
+                if (x < 0)
+                {
+                    if (y <= 1 + x)
+                    {
+                        answer = true;
+                    }
+                }
+                else
+                {
+                    if (y <= 1 - x)
+                    {
+                        answer = true;
+                    }
+                }
+            }
+            else
+                answer = false;
 
             return answer;
         }
@@ -67,9 +97,14 @@
         {
             bool answer = true;
 
-            // code here
+            if (n < 0)
+                answer = false;
 
-            // end
+            else
+
+                if (n % 2 == 0)
+
+                    answer = false;
 
             return answer;
         }
@@ -77,11 +112,21 @@
         {
             bool answer = false;
 
-            // code here
+            int current = 14 * 60;
+            int wanted = 7 * 60;
+            for (int day = 1; day <= X; day++)
+            {
+                current -= 60;
 
-            // end
+                if (day % 2 != 0)
+                {
+                    current -= Y;
+                }
+                if (current <= wanted)
+                    answer = true;
+             }
 
-            return answer;
+                    return answer;
         }
     }
 }
