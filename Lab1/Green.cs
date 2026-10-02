@@ -101,11 +101,11 @@ namespace Lab1
                 answer = false;
 
             else
-
+            {
                 if (n % 2 == 0)
 
                     answer = false;
-
+            }
             return answer;
         }
         public bool Task8(int X, int Y)
@@ -123,8 +123,10 @@ namespace Lab1
                     current -= Y;
                 }
                 if (current <= wanted)
+                {
                     answer = true;
                     break;
+                }
              }
 
                     return answer;
