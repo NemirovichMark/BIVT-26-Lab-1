@@ -7,7 +7,7 @@
             bool answer = false;
 
             // code here
-            answer = Math.Abs(d) >= 1
+            answer = Math.Abs(d) >= 1;
             // end
 
             return answer;
@@ -17,7 +17,7 @@
             bool answer = false;
 
             // code here
-            answer = (d + f) / 2 > 0
+            answer = (d + f) / 2 > 0;
             // end
 
             return answer;
@@ -69,6 +69,7 @@
 
                 return answer;
             }
+        }
         public bool Task6(double x, double y)
         {
             bool answer = false;
@@ -81,7 +82,7 @@
             }
             else
             {
-                upper = 1 - x
+                upper = 1 - x;
             }
             answer = y >= 0 && y < upper;
             // end
