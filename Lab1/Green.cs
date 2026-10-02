@@ -13,6 +13,7 @@ namespace Lab1
                 answer = false;
 
             return answer;
+
         }
         public bool Task2(double d, double f)
         {
@@ -46,7 +47,6 @@ namespace Lab1
             int answer = a;
             if (b > answer) answer = b;
             if (c > answer) answer = c;
-
             return answer;
         }
         public double Task5(double x)
@@ -107,24 +107,19 @@ namespace Lab1
         {
             bool answer = false;
 
-            int current = 14 * 60;
-            int wanted = 7 * 60;
-            for (int day = 1; day <= X; day++)
+            if (X >= 7)
             {
-                current -= 60;
-
-                if (day % 2 != 0)
-                {
-                    current -= Y;
-                }
-                if (current <= wanted)
-                {
+                int t = (X + 1) / 2;
+                int time = t * Y;
+                if (time >= 240 && time <= 360)
                     answer = true;
-                    break;
-                }
-             }
+                else
+                    answer = false;
+            }
+            else
+                answer = false;
 
-                    return answer;
+            return answer;
         }
     }
 }
