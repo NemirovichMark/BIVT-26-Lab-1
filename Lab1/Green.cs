@@ -7,6 +7,11 @@
             bool answer = false;
 
             // code here
+            double result = Math.Exp(d);
+if (Math.Abs(result) >=1 )
+{
+    Console.WriteLine("+");
+}
 
             // end
 
