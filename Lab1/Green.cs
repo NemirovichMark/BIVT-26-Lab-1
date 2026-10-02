@@ -124,6 +124,7 @@ namespace Lab1
                 }
                 if (current <= wanted)
                     answer = true;
+                    break;
              }
 
                     return answer;
