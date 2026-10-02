@@ -7,6 +7,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if (d > 0)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -17,6 +21,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if (n % 2 == 0)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -27,6 +35,7 @@ namespace Lab1
             int answer = 0;
 
             // code here
+            answer = Math.Max(a, b);
 
             // end
 
@@ -37,7 +46,14 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(d) <= Math.Abs(f))
+            {
+                answer = d;
+            }
+            else
+            {
+                answer = f;
+            }
             // end
 
             return answer;
@@ -47,6 +63,15 @@ namespace Lab1
             double answer = 0;
 
             // code here
+            double X = Math.Abs(x);
+            if (X > 1)
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = x;
+            }
 
             // end
 
@@ -57,6 +82,15 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            double X = x * x;
+            double Y = y*y;
+            double R = r*r;
+            double D = Math.Abs(X+Y-R);
+            if (D<=Math.Pow(10, -4))
+            {
+                answer = true;
+            }
+        
 
             // end
 
@@ -68,6 +102,15 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            int s = n * n;
+            if (s - n > 2 * n)
+            {
+                if (n%2==0)
+                    {
+                    answer = true;
+                    }
+            }
+            
 
             // end
 
@@ -78,6 +121,13 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if (L <= 30 && T + M >= 5 && M % 2 == 0)
+                return true;
+            else
+                return false;
+            {
+                answer = true;
+            }
 
             // end
 
