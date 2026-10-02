@@ -102,8 +102,8 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            int statement = X * 60 + (X + 1) / 2 * Y;
-            if (statement >= 420)
+            int tea = ((X + 1) / 2) * Y;
+            if (X >= 7 && tea >= 240 && tea <= 360)
                 answer = true;
             // end
 
