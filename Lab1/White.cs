@@ -8,9 +8,9 @@ namespace Lab1
 
             // code here
             
-if (d > 0)
+            if (d > 0)
 {
-    answer = true;
+                answer = true;
 }
             // end
 
@@ -25,7 +25,7 @@ if (d > 0)
         {
                  answer = true;
         }
-              return answer;
+             return answer;
         }
         public int Task3(int a, int b)
         {
