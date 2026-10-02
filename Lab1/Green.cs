@@ -43,14 +43,9 @@ namespace Lab1
         }
         public int Task4(int a, int b, int c)
         {
-            int answer = 0;
-
-            if (a > b && a > c)
-                answer = a;
-            else if (b > a && b > c)
-                answer = b;
-            else
-                answer = c;
+            int answer = a;
+            if (b > answer) answer = b;
+            if (c > answer) answer = c;
 
             return answer;
         }
