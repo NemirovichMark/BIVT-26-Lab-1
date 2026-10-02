@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if (Math.Abs(d) >= 1)
+                answer = true;
+            else
+                answer = false;
             // end
 
             return answer;
@@ -17,7 +20,12 @@
             bool answer = false;
 
             // code here
+            double avg = (d + f) / 2;
 
+            if (avg > 0)
+                answer = true;
+            else
+                answer = false;
             // end
 
             return answer;
@@ -27,7 +35,12 @@
             bool answer = false;
 
             // code here
+            double avg = (Math.Abs(a) + Math.Abs(b)) / 2.0;
 
+            if (a + b > avg)
+                answer = true;
+            else
+                answer = false;
             // end
 
             return answer;
@@ -37,7 +50,13 @@
             int answer = 0;
 
             // code here
+            answer = a;
 
+            if (b > answer)
+                answer = b;
+
+            if (c > answer)
+                answer = c;
             // end
 
             return answer;
@@ -47,6 +66,10 @@
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+                answer = 0;
+            else
+                answer = x * x - 1;
 
             // end
 
@@ -57,7 +80,10 @@
             bool answer = false;
 
             // code here
-
+            if (y >= 0 && y <= 1 - Math.Abs(x))
+                answer = true;
+            else
+                answer = false;
             // end
 
             return answer;
@@ -68,17 +94,28 @@
             bool answer = true;
 
             // code here
+            if (n < 0)
+                answer = false;
+            else if (n % 2 == 0)
+                answer = false;
 
             // end
 
             return answer;
         }
-        public bool Task8(int X, int Y)
+        public bool Task8(int x, int y)
         {
             bool answer = false;
 
             // code here
+            if (x >= 7)
+            {
+                int teaCount = (x + 1) / 2;
+                int sleepShift = teaCount * y;
 
+                if (sleepShift >= 240 && sleepShift <= 360)
+                    answer = true;
+            }
             // end
 
             return answer;
