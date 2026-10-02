@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="C:\Users\nikit\Downloads\Green.cs" Link="Green.cs" />
+    <Compile Include="C:\Users\nikit\Downloads\ЛАБА 1 ИЛЬЮЩЕНЯ БИВТ 26-6-15.cs" Link="ЛАБА 1 ИЛЬЮЩЕНЯ БИВТ 26-6-15.cs" />
+  </ItemGroup>
+
 </Project>
