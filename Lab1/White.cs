@@ -45,7 +45,7 @@ namespace Lab1
         {
             double answer = 0;
 
-            if (Math.Abs(d) < Math.Abs(f))
+            if (Math.Abs(d) <= Math.Abs(f))
         {
                  answer = d;
         }
