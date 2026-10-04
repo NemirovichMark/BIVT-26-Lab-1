@@ -4,7 +4,7 @@
     {
         public bool Task1(double d)
         {
-            bool answer = false;
+            bool answer = true;
 
             // code here
 
