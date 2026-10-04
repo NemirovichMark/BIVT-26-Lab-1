@@ -1,0 +1,15 @@
+2026-10-02T19:27:59.7092299+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.4.3+c252b64ad913ea9411fc5d17bfd5580d2d061497
+2026-10-02T19:27:59.7232980+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-02T19:27:59.7249446+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-02T19:27:59.7249493+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 19:27:59.673
+2026-10-02T19:27:59.7297767+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 21876
+2026-10-02T19:27:59.7299149+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.17
+2026-10-02T19:27:59.7299215+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.17\System.Private.CoreLib.dll
+2026-10-02T19:27:59.7299339+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-02T19:27:59.7299367+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\meep\Documents\uni\programs\lab1\Lab1test\bin\Debug\net8.0\Lab1test.dll
+2026-10-02T19:27:59.7306229+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\meep\Documents\uni\programs\lab1\Lab1test\bin\Debug\net8.0\Log --results-directory C:\Users\meep\Documents\uni\programs\lab1\Lab1\TestResults --client-port 50813'
+2026-10-02T19:27:59.7322605+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-02T19:27:59.7864204+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-02T19:27:59.7908506+00:00 Microsoft.Testing.Platform.Configurations.JsonConfigurationSource+JsonConfigurationProvider INFORMATION Config file 'C:\Users\meep\Documents\uni\programs\lab1\Lab1test\bin\Debug\net8.0\Lab1test.testconfig.json' not found.
+2026-10-02T19:27:59.7927031+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2026-10-02T19:28:00.0126628+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.6.4' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
