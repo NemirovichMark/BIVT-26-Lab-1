@@ -7,17 +7,31 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if (d > 0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task2(int n)
         {
             bool answer = false;
 
             // code here
-
+            if (n % 2 == 0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
