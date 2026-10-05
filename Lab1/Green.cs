@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -6,9 +6,11 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            double d1 = Math.Abs(d);
+            if (d1 >= 1)
+                answer = true;
+            else
+                answer = false;
 
             return answer;
         }
@@ -16,9 +18,12 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            double s = d + f;
+            double c = (s / 2.0);
+            if (c > 0)
+                answer = true;
+            else
+                answer = false;
 
             return answer;
         }
@@ -26,9 +31,14 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            double s = a + b;
+            double c = ((Math.Abs(a) + Math.Abs(b)) / 2.0);
+            if (s > c)
+                answer = true;
+            else
+            {
+                answer = false;
+            }
 
             return answer;
         }
@@ -36,9 +46,12 @@
         {
             int answer = 0;
 
-            // code here
-
-            // end
+            double m = a;
+            if (b > m)
+                m = b;
+            if (c > m)
+                m = c;
+            answer = (int)m;
 
             return answer;
         }
@@ -46,9 +59,10 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (Math.Abs(x) > 1)
+                answer = 0;
+            else
+                answer = x * x - 1;
 
             return answer;
         }
@@ -56,9 +70,26 @@
         {
             bool answer = false;
 
-            // code here
+            if (y >= 0)
+            {
+                if (x < 0)
+                {
+                    if (y <= 1 + x)
 
-            // end
+                        answer = true;
+                    else
+                        answer = false;
+                }
+                else
+                {
+                    if (y <= 1 - x)
+                        answer = true;
+                    else
+                        answer = false;
+                }
+            }
+            else
+                answer = false;
 
             return answer;
         }
@@ -67,9 +98,11 @@
         {
             bool answer = true;
 
-            // code here
-
-            // end
+            if (n < 0)
+                answer = false;
+            else
+               if (n % 2 == 0)
+                answer = false;
 
             return answer;
         }
@@ -77,9 +110,25 @@
         {
             bool answer = false;
 
-            // code here
+            if (X >= 7)
+            {
+                int t = (X + 1) / 2;
+                int s = t * Y;
 
-            // end
+                if (s >= 240 && s <= 360)
+                {
+                    answer = true;
+                }
+                else
+                {
+                    answer = false;
+                }
+            }
+            else
+            {
+                answer = false;
+            }
+
 
             return answer;
         }
