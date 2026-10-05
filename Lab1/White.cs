@@ -51,7 +51,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            answer = (Math.Abs(d) < Math.Abs(f)) ? d : f;
+            answer = (Math.Abs(d) <= Math.Abs(f)) ? d : f;
 
             // end
 
@@ -76,7 +76,8 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            answer = Math.Abs(x * x * y * y - r * r) <= 1e-4;
+            answer = Math.Abs((x * x + y * y) - ( r * r)) <= 1e-4;
+
 
             // end
 
