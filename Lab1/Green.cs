@@ -1,12 +1,18 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
         public bool Task1(double d)
         {
             bool answer = false;
+            
 
             // code here
+            double a =Math.Abs(d);
+            answer = false;
+            answer = a >= 1;
+            
+            Console.WriteLine($"modul = {a} and answer = {answer}");
 
             // end
 
@@ -17,6 +23,8 @@
             bool answer = false;
 
             // code here
+            answer = ((f + d) / 2) > 0;
+            Console.WriteLine(answer);
 
             // end
 
@@ -26,17 +34,19 @@
         {
             bool answer = false;
 
-            // code here
+            if(a+b>(Math.Abs(a)+Math.Abs(b))/2) answer = true;
 
-            // end
+            
 
             return answer;
         }
-        public int Task4(int a, int b, int c)
+        public int Task4(int a, int b, int c )
         {
             int answer = 0;
 
-            // code here
+            int[] arr = {a, b, c};
+
+            answer = arr.Max();
 
             // end
 
@@ -45,8 +55,16 @@
         public double Task5(double x)
         {
             double answer = 0;
+            switch (Math.Abs(x)){
+                case <=1:
+                    answer = x * x - 1;
+                    break;
+                case > 1:
+                    answer = 0;
+                    break;
 
-            // code here
+            }
+
 
             // end
 
@@ -56,7 +74,7 @@
         {
             bool answer = false;
 
-            // code here
+            if (y >= 0 && ((x < 0 && y <= 1 + x) || (x >= 0 && y <= 1 - x))) { answer = true; }
 
             // end
 
@@ -67,7 +85,8 @@
         {
             bool answer = true;
 
-            // code here
+            if (n < 0) { answer = false; }
+            else if (n % 2 == 0) { answer = false; }
 
             // end
 
@@ -77,7 +96,7 @@
         {
             bool answer = false;
 
-            // code here
+            if (X >= 7 && ((X + 1) / 2) * Y >= 240 && ((X + 1) / 2) * Y <= 360) { answer = true; }
 
             // end
 
