@@ -7,7 +7,14 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (d > 0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -17,7 +24,14 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (n % 2 == 0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -27,7 +41,14 @@ namespace Lab1
             int answer = 0;
 
             // code here
-
+            if (a > b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
             // end
 
             return answer;
@@ -37,7 +58,14 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(d) > Math.Abs(f))
+            {
+                answer = f;
+            }
+            else
+            {
+                answer = d;
+            }
             // end
 
             return answer;
@@ -47,7 +75,14 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) > 1)
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = x;
+            }
             // end
 
             return answer;
@@ -57,7 +92,14 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (Math.Abs(Math.Pow(x, 2) + Math.Pow(y, 2) - Math.Pow(r, 2)) <= Math.Pow(10, -4))
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -66,9 +108,25 @@ namespace Lab1
         public bool Task7(int n)
         {
             bool answer = false;
+            
 
+            int s = (int)Math.Pow(n, 2);
             // code here
-
+            if (s - n > 2 * n)
+            {
+                if (n % 2 == 0)
+                {
+                    answer = true;
+                }
+                else
+                {
+                    return answer;
+                }
+            }
+            else
+            {
+                return answer;
+            }
             // end
 
             return answer;
@@ -78,7 +136,14 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (T + M >= 5 && M % 2 == 0 && L / 10 <= 3)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
