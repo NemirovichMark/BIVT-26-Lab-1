@@ -1,13 +1,11 @@
-﻿namespace Lab1
-{
-    public class Green
+﻿    public class Green
     {
         public bool Task1(double d)
         {
             bool answer = false;
 
             // code here
-
+            answer = Math.Abs(d) >= 1;
             // end
 
             return answer;
@@ -17,7 +15,7 @@
             bool answer = false;
 
             // code here
-
+            answer = (d + f) / 2 > 0;
             // end
 
             return answer;
@@ -27,7 +25,7 @@
             bool answer = false;
 
             // code here
-
+            answer = a + b > (Math.Abs(a) + Math.Abs(b)) / 2.0;
             // end
 
             return answer;
@@ -37,7 +35,18 @@
             int answer = 0;
 
             // code here
-
+            if (a >= b && a >= c)
+            {
+                answer = a;
+            }
+            else if (b >= c && b >= a)
+            {
+                answer = b;
+            }
+            else
+            {
+                answer = c;
+            }
             // end
 
             return answer;
@@ -47,7 +56,14 @@
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else
+            {
+                answer = x * x - 1;
+            }
             // end
 
             return answer;
@@ -57,7 +73,16 @@
             bool answer = false;
 
             // code here
-
+            double upper;
+            if (x < 0)
+            {
+                upper = 1 + x;
+            }
+            else
+            {
+                upper = 1 - x;
+            }
+            answer = y >= 0 && y <= upper;
             // end
 
             return answer;
@@ -67,8 +92,17 @@
         {
             bool answer = true;
 
-            // code here
 
+            // code here
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else if (n % 2 == 0)
+            {
+                answer = false;
+
+            }
             // end
 
             return answer;
@@ -77,8 +111,11 @@
         {
             bool answer = false;
 
-            // code here
 
+            // code here
+             int workDays = (X + 1) / 2;
+            int totalShift = teadDays * Y;
+            answer = X >= 7 && totalShift >= 240 && workDays <= 360;
             // end
 
             return answer;
