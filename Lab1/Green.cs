@@ -115,12 +115,9 @@ namespace Lab1
 
 
             // code here
-            answer = false;
-            if（x >= 7)
-            {
-            int teaCount = (X + 2) / 2;
-            int sleepMinues = 180 + teadCount * Y;
-            answer = sleepMinutes >= 420 && sleepMinutes <= 540;
+             int workDays = (X + 1) / 2;
+            int totalShift = teadDays * Y;
+            answer = X >= 7 && totalShift >= 240 && workDays <= 360;
             // end
 
             return answer;
