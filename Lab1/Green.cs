@@ -6,7 +6,7 @@
         {
             bool answer = false;
 
-            if (Math.Abs(d) <= 0)
+            if (Math.Abs(d) <= 1)
             {
                 answer = true;
             }
@@ -95,13 +95,13 @@
         {
             bool answer = false;
 
-            if X >= 7
-                int dt = (X + 1) / 2
-                int cnt = dt * Y
-                if (cnt >= 240 && cnt <= 360)
-                {
-                    answer = true;
-                }
+            term1 = 600 - 60 * X >= 420 && 600 - 60 * X <= 540;
+            term2 = 60 * X + ((X + 1) / 2) * Y >= 420
+
+            if (term1 && term2)
+            {
+                answer = true;
+            }
 
             return answer;
         }
