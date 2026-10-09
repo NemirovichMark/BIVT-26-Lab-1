@@ -6,7 +6,7 @@
         {
             bool answer = false;
 
-            if (Math.Abs(d) <= 1)
+            if (Math.Abs(d) >= 1)
             {
                 answer = true;
             }
@@ -94,9 +94,11 @@
         public bool Task8(int X, int Y)
         {
             bool answer = false;
+            int teadays = (X + 1) / 2;
+            int tea = teadays * Y;
 
-            bool term1 = 600 - 60 * X >= 420 && 600 - 60 * X <= 540;
-            bool term2 = 60 * X + ((X + 1) / 2) * Y >= 420;
+            bool term1 = (60 * X + tea) >= 420;
+            bool term2 = tea >= 240 && tea <= 360;
 
             if (term1 && term2)
             {
