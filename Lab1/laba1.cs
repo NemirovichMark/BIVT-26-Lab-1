@@ -6,7 +6,7 @@
         {
             bool answer = false;
 
-            if (Math.Abs(d) <= 1)
+            if (Math.Abs(d) <= 0)
             {
                 answer = true;
             }
@@ -32,7 +32,7 @@
             {
                 answer = true;
             }
-            
+
             return answer;
         }
         public int Task4(int a, int b, int c)
@@ -51,7 +51,7 @@
             {
                 answer = c;
             }
-            
+
             return answer;
         }
         public double Task5(double x)
@@ -65,7 +65,7 @@
             {
                 answer = Math.Pov(x, 2) - 1;
             }
-            
+
             return answer;
         }
         public bool Task6(double x, double y)
@@ -76,7 +76,7 @@
             {
                 answer = true;
             }
-            
+
             return answer;
         }
 
@@ -88,21 +88,22 @@
             {
                 answer = false;
             }
-            
+
             return answer;
         }
         public bool Task8(int X, int Y)
         {
             bool answer = false;
 
-            bool term1 = 600 - 60 * X >= 420 && 600 - 60 * X <= 540;
-            bool term2 = 60 * X + ((X + 1) / 2) * Y >= 420;
-
-            if (term1 && term2)
+            if (X >= 7)
             {
-                answer = true;
+                int dt = (X + 1) / 2;
+                int cnt = dt * Y;
+                if (cnt >= 240 && cnt <= 360)
+                {
+                    answer = true;
+                }
             }
-
             return answer;
         }
     }
