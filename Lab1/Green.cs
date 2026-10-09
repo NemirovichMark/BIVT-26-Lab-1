@@ -95,8 +95,8 @@
         {
             bool answer = false;
 
-            term1 = 600 - 60 * X >= 420 && 600 - 60 * X <= 540;
-            term2 = 60 * X + ((X + 1) / 2) * Y >= 420
+            bool term1 = 600 - 60 * X >= 420 && 600 - 60 * X <= 540;
+            bool term2 = 60 * X + ((X + 1) / 2) * Y >= 420;
 
             if (term1 && term2)
             {
