@@ -63,7 +63,7 @@
             }
             else
             {
-                answer = Math.Pov(x, 2) - 1;
+                answer = Math.Pow(x, 2) - 1;
             }
             
             return answer;
