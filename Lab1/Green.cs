@@ -116,7 +116,6 @@ namespace Lab1
 
             // code here
              int N = (X + 1) / 2;
-            int totalShift = teadDays * Y;
             answer = X >= 7 && N * Y >= 240 && N * Y <= 360;
             // end
 
