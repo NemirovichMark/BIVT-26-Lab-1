@@ -115,9 +115,9 @@ namespace Lab1
 
 
             // code here
-             int workDays = (X + 1) / 2;
+             int N = (X + 1) / 2;
             int totalShift = teadDays * Y;
-            answer = X >= 7 && totalShift >= 240 && workDays <= 360;
+            answer = X >= 7 && N * Y >= 240 && N * Y <= 360;
             // end
 
             return answer;
