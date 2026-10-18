@@ -24,9 +24,17 @@ public class Green
         bool answer = false;
 
         // code here
-        double avg = (d + f) / 2;
-        answer = (avg > 0);
-        return answer;
+       double sum = d + f;
+double modD = Math.Abs(d);
+double modF = Math.Abs(f);
+double avgMod = (modD + modF) / 2.0;
+if (sum > avgMod)
+{
+answer = true;
+}
+Console.WriteLine(answer);
+return answer;
+}
         // end
     }
     public bool Task3(int a, int b)
