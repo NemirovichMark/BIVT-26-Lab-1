@@ -5,8 +5,16 @@ namespace Lab1
         public bool Task1(double d)
         {
             bool answer = false;
+
+            //code here
             double a = Math.Abs(d);
             answer = a>= 1;
+            if (a >= 1)
+            {
+                answer = true;
+            }
+
+            //end
 
 
             return answer;
@@ -16,6 +24,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if (((d + f) / 2) > 0)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -26,6 +38,11 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if ((a + b) > ((Math.Abs(a) + Math.Abs(b)) / 2))
+            {
+                answer = true;
+            }
+
 
             // end
 
@@ -36,6 +53,19 @@ namespace Lab1
             int answer = 0;
 
             // code here
+            if (a > b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
+            if (c > answer)
+            {
+                answer = c;
+            }
+
 
             // end
 
@@ -46,6 +76,15 @@ namespace Lab1
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else
+            {
+                answer=x*x+-1;
+            }
+
 
             // end
 
@@ -56,10 +95,23 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            if (x < 0)
+            {
+                if (y >= 0 && y <= 1 + x)
+                {
+                    answer = true;
+                }
+            }
+            else
+            {
+                if (y >= 0 && y <= 1 - x)
+                {
+                    answer = true;
+                }
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
 
         public bool Task7(int n)
@@ -67,7 +119,17 @@ namespace Lab1
             bool answer = true;
 
             // code here
-
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                if (n % 2 == 0)
+                {
+                    answer = false;
+                }
+            }
             // end
 
             return answer;
@@ -77,10 +139,17 @@ namespace Lab1
             bool answer = false;
 
             // code here
+            int tea = ((X + 1) / 2)*Y;
+            if (X >= 7)
+            {
+                if ((600 - 420 + tea) >= 420 && (600 - 420 + tea) <= 540)
+                {
+                    answer = true;
+                }
+            }
+			// end
 
-            // end
-
-            return answer;
+			return answer;
         }
     }
 }
