@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -6,9 +6,16 @@
         {
             bool answer = false;
 
-            // code here
+            //code here
+            double a = Math.Abs(d);
+            answer = a>= 1;
+            if (a >= 1)
+            {
+                answer = true;
+            }
 
-            // end
+            //end
+
 
             return answer;
         }
@@ -17,6 +24,10 @@
             bool answer = false;
 
             // code here
+            if (((d + f) / 2) > 0)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -27,6 +38,11 @@
             bool answer = false;
 
             // code here
+            if ((a + b) > ((Math.Abs(a) + Math.Abs(b)) / 2))
+            {
+                answer = true;
+            }
+
 
             // end
 
@@ -37,6 +53,19 @@
             int answer = 0;
 
             // code here
+            if (a > b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
+            if (c > answer)
+            {
+                answer = c;
+            }
+
 
             // end
 
@@ -47,6 +76,15 @@
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else
+            {
+                answer=x*x+-1;
+            }
+
 
             // end
 
@@ -57,10 +95,23 @@
             bool answer = false;
 
             // code here
+            if (x < 0)
+            {
+                if (y >= 0 && y <= 1 + x)
+                {
+                    answer = true;
+                }
+            }
+            else
+            {
+                if (y >= 0 && y <= 1 - x)
+                {
+                    answer = true;
+                }
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
 
         public bool Task7(int n)
@@ -68,7 +119,17 @@
             bool answer = true;
 
             // code here
-
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                if (n % 2 == 0)
+                {
+                    answer = false;
+                }
+            }
             // end
 
             return answer;
@@ -78,10 +139,17 @@
             bool answer = false;
 
             // code here
+            int tea = ((X + 1) / 2)*Y;
+            if (X >= 7)
+            {
+                if ((600 - 420 + tea) >= 420 && (600 - 420 + tea) <= 540)
+                {
+                    answer = true;
+                }
+            }
+			// end
 
-            // end
-
-            return answer;
+			return answer;
         }
     }
 }
