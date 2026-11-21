@@ -7,7 +7,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            answer = d > 0;
             // end
 
             return answer;
@@ -17,7 +17,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            answer = n % 2 == 0;
             // end
 
             return answer;
@@ -27,7 +27,10 @@ namespace Lab1
             int answer = 0;
 
             // code here
-
+            if (a == b)
+                answer = a;
+            else
+                answer = a > b ? a : b;
             // end
 
             return answer;
@@ -37,7 +40,10 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(d) == Math.Abs(f))
+                answer = d;
+            else
+                answer = Math.Abs(d) < Math.Abs(f) ? d : f;
             // end
 
             return answer;
@@ -47,8 +53,11 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
-            // end
+            if (Math.Abs(x) > 1)
+                answer = 1;
+            else
+                answer = x;
+             // end
 
             return answer;
         }
@@ -57,7 +66,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            answer = Math.Abs(x * x + y * y - r * r) <= 1e-4;
             // end
 
             return answer;
@@ -68,7 +77,12 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            int s = n * n;
+            if (s - n > 2 * n)
+            {
+                if (n % 2 == 0)
+                    answer = true;
+            }
             // end
 
             return answer;
@@ -78,7 +92,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            answer = L <= 30 && T + M >= 5 && M % 2 == 0;
             // end
 
             return answer;
